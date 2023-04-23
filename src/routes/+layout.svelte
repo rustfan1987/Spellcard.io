@@ -18,4 +18,4 @@
 
 <Heading />
 <slot />
-<Footer />
+

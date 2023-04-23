@@ -6,7 +6,7 @@
 	const user = getUser()
 </script>
 
-<nav class="container mt-8 mr-4 flex justify-center">
+<nav class="container mt-2 mr-4 flex justify-center">
 	<a class="unstyled text-xl mr-4 " href="/">
 		<b>🔥 Dataspells</b>
 	</a>
@@ -32,6 +32,6 @@
 			{/if}
 		</ol>
 
-		<LightSwitch />
+
 	</div>
 </nav>
