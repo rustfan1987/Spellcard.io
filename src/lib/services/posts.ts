@@ -18,6 +18,8 @@ export async function getPosts() {
 			slug: true,
 			title: true,
 			published: true,
+			description: true,
+			markdown: true,
 		},
 		orderBy: { createdAt: 'desc' },
 	})
@@ -31,6 +33,7 @@ export async function getPublishedPosts() {
 			slug: true,
 			title: true,
 			description: true,
+			markdown: true,
 		},
 		orderBy: { createdAt: 'desc' },
 		take: 10,
