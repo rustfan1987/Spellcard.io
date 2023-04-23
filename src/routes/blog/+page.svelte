@@ -15,7 +15,7 @@
 
 <div class="	container mt-8 mb-8">
 	<main class="container mt-8">
-		<h1 class="flex justify-center capitalize">Search Spells</h1>
+		<h1 class="flex justify-center capitalize">Search Spells </h1>
 
 		<form on:input|preventDefault class="mt-8">
 			<label for="search">
