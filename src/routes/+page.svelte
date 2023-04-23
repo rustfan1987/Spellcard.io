@@ -1,11 +1,12 @@
 <script lang="ts">
+
 	import { date } from '$lib/utils'
 
 	export let data
 </script>
 
 <main class="container mt-32">
-	<h1 class="capitalize">Latest posts</h1>
+	<h1 class="capitalize">New Spells</h1>
 
 	<div class="mt-8 space-y-6">
 		{#each data.posts as post, i}
@@ -26,9 +27,12 @@
 				</li>
 			</ol>
 
+			
+
 			{#if data.posts.length > 1 && data.posts.length !== i + 1}
 				<hr />
 			{/if}
 		{/each}
+
 	</div>
 </main>

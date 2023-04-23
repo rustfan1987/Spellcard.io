@@ -5,6 +5,6 @@
 </script>
 
 <div class="container mt-32">
-	<h1 class="capitalize">Edit post</h1>
+	<h1 class="capitalize">Edit Spell</h1>
 	<Form data={data.form} />
 </div>
