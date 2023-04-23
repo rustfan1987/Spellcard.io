@@ -13,7 +13,7 @@
 
 <div class="container mt-32">
 	<main class="container mt-32">
-		<h1 class="capitalize">Search posts</h1>
+		<h1 class="capitalize">Search Spells</h1>
 
 		<form on:input|preventDefault class="mt-8">
 			<label for="search">

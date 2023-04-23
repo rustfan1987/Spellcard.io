@@ -6,11 +6,11 @@
 </script>
 
 <main class="container mt-32">
-	<h1 class="font">Dashboard</h1>
+	<h1 class="font">My Spells</h1>
 
 	<div class="mt-8">
 		<a class="font-bold capitalize underline-offset-4" href="/dashboard/create">
-			+ Create a new post
+			+ Create a new Spell
 		</a>
 	</div>
 
