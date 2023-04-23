@@ -4,7 +4,7 @@
 <div class="container mt-32">
 	<hr />
 
-	<footer class="py-8">
+	<footer class="py-8 flex justify-center">
 		<nav class="flex space-x-32">
 			<ol class="space-y-4">
 				<li>
