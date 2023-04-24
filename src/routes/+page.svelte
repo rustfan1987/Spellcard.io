@@ -12,6 +12,7 @@
 			<button class="mx-3 text-white">Popular</button>
 			<button class="mx-3 text-white">Spicy</button>
 			<button class="mx-3 text-white">Random</button>
+
 		</div>
 	</div>
 </div>
