@@ -5,19 +5,25 @@
 </script>
 
 
-<div class="my-4 flex justify-center">
-	<a class="font-bold capitalize underline-offset-4" href="/dashboard/create">
-		+ Create a new Spell
-	</a>
+<div class="my- flex justify-center">
+
 </div>
 
-<img class=" z-50 pointer-events-none decoration-left fixed left-0 top-0 h-screen w-auto object-contain" src="BrushLeft.png" alt="Left decoration" />
-<img class="z-50 pointer-events-none decoration-right fixed right-0 top-0 h-screen w-auto object-contain" src="BrushRight.png" alt="Right decoration" />
-<img class="z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
+<div class="container ml-48 flex justify-center">
+	<div style="position: absolute; top: 48px;">
+	  <div class="flex justify-center mt-2">
+		<a class="inline-block bg-slate-500 hover:bg-blue-600 rounded-lg px-4 py-2 text-white font-bold capitalize" href="/dashboard/create">
+		  + Create a new Spell
+		</a>
+	  </div>
+	</div>
+  </div>
+
+
 
 <div	class=" Gridbox flex justify-center bg-fixed bg-cover bg- center"
 >
-	<div class="mt-20 pt-7 grid grid-cols-5 gap-5">
+	<div class="mt-16 pt-7 grid grid-cols-5 gap-5">
 		{#each data.posts as post, i}
 			<div
 				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
@@ -228,7 +234,9 @@
 	</div>
 </div>
 
-
+<img class=" z-50 pointer-events-none decoration-left fixed left-0 top-0 h-screen w-auto object-contain" src="BrushLeft.png" alt="Left decoration" />
+<img class="z-50 pointer-events-none decoration-right fixed right-0 top-0 h-screen w-auto object-contain" src="BrushRight.png" alt="Right decoration" />
+<img class="z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
 
 <style>
 	.spellcard {

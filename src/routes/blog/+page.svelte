@@ -13,7 +13,7 @@
 	
 </script>
 <div class="container ml-50 flex justify-center">
-	<div style="position: absolute; top: 70px;">
+	<div style="position: absolute; top: 56px;">
 	  <form on:input|preventDefault class="">
 		<label for="search">
 		  <input
@@ -35,7 +35,7 @@
 <img class="z-50 pointer-events-none decoration-right fixed right-0 top-0 h-screen w-auto object-contain" src="BrushRight.png" alt="Right decoration" />
 <img class="z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
 
-<div	class="pt-16 Gridbox flex justify-center"
+<div	class="pt-7 Gridbox flex justify-center"
 >
 	<div class=" pt-16 grid grid-cols-5 gap-5">
 				{#each filteredPosts as post, i}

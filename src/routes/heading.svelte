@@ -23,11 +23,12 @@
 	<div class=" flex items-center gap-4">
 		<ol class="flex space-x-4">
 			<li>
-				<a class="unstyled text-white" href="/blog">Spellbook</a>
-			</li>
-			<li>
 				<a class="unstyled text-white" href="/dashboard">Spells</a>
 			</li>
+			<li>
+				<a class="unstyled text-white" href="/blog">Spellbook</a>
+			</li>
+
 			<li>
 				<a class="unstyled text-white" href="/about">Team Leviathan</a>
 			</li>

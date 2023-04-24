@@ -12,9 +12,11 @@
 </script>
 
 <div class="card mt-8 p-8">
+<div class="flex justify-center">Create New Spellcard</div>
+
 	<form method="POST" class="space-y-6" use:enhance>
 		<label class="label" for="title">
-			<span class="block">Title</span>
+			<span class="block">Name</span>
 			<input
 				class="input"
 				type="text"
@@ -31,7 +33,7 @@
 		{/if}
 
 		<label class="label" for="slug">
-			<span>Slug</span>
+			<span>Unique Title</span>
 			<input
 				class="input"
 				type="text"
@@ -64,14 +66,11 @@
 			<span class="text-red-400">{$errors.description}</span>
 		{/if}
 
-		<div class="space-y-2">
-			<p>Markdown</p>
-			<Editor markdown={$form.markdown} />
-		</div>
+
 
 		<div>
 			<SlideToggle name="published" bind:checked={isDraft}>
-				Published
+				Published?
 			</SlideToggle>
 		</div>
 

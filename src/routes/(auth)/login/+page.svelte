@@ -4,7 +4,7 @@
 	export let data
 </script>
 
-<div class="mx-auto mt-32 max-w-sm">
+<div class="mx-auto  max-w-sm">
 	<h1>Log in</h1>
 	<AuthForm data={data.form} />
 	<p class="mt-4">

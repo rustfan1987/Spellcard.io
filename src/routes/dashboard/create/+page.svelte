@@ -4,7 +4,7 @@
 	export let data
 </script>
 
-<div class="container mt-32">
-	<h1 class="capitalize">Create Spell</h1>
+<div class="container ">
+	<h1 class="capitalize">.</h1>
 	<Form data={data.form} />
 </div>
