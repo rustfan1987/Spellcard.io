@@ -6,32 +6,43 @@
 	const user = getUser()
 </script>
 
-<nav class="container mt-2 mr-4 flex justify-center">
-	<a class="unstyled text-xl mr-4 " href="/">
+
+<style>
+	nav {
+		z-index: 10;
+		position: fixed;
+		width: 100%;
+	}
+</style>
+
+<nav class="z-10 position-relative mt-6 mr-4 flex justify-center ">
+	<a class="unstyled text-xl mr-4 text-white" href="/">
 		<b>🔥 Dataspells</b>
 	</a>
 
-	<div class="flex items-center gap-4">
+	<div class=" flex items-center gap-4">
 		<ol class="flex space-x-4">
 			<li>
-				<a class="unstyled muted" href="/blog">Spellbook</a>
+				<a class="unstyled text-white" href="/blog">Spellbook</a>
 			</li>
 			<li>
-				<a class="unstyled muted" href="/dashboard">Spells</a>
+				<a class="unstyled text-white" href="/dashboard">Spells</a>
 			</li>
 			<li>
-				<a class="unstyled muted" href="/about">Team Leviathan</a>
+				<a class="unstyled text-white" href="/about">Team Leviathan</a>
 			</li>
 
 			{#if $user}
 				<li>
 					<form method="POST" action="/logout" use:enhance>
-						<button class="muted" type="submit">Log out</button>
+						<button class="text-white" type="submit">Log out</button>
 					</form>
 				</li>
 			{/if}
 		</ol>
-
-
 	</div>
+	
+	
 </nav>
+
+

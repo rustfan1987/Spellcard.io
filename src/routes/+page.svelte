@@ -4,31 +4,30 @@
 	export let data
 </script>
 
-<div class="mx-auto container  my-1 flex justify-center">
-	<div class="grid grid-cols-4 gap-1">
-	  <button class="  text-black">New</button>
-	  <button class="  text-black">Hot</button>
-	  <button class="  text-black">Spicy</button>
-	  <button class="ml-4 text-black">Random</button>
-	  
 
+<div class="container ml-50 flex justify-center">
+	<div style="position: absolute; top: 55px;">
+		<div class="flex justify-center  mt-2">
+			<button class="mx-3 text-white">New</button>
+			<button class="mx-3 text-white">Popular</button>
+			<button class="mx-3 text-white">Spicy</button>
+			<button class="mx-3 text-white">Random</button>
+		</div>
 	</div>
-  </div>
+</div>
 
 <img class=" z-50 pointer-events-none decoration-left fixed left-0 top-0 h-screen w-auto object-contain" src="BrushLeft.png" alt="Left decoration" />
 <img class="z-50 pointer-events-none decoration-right fixed right-0 top-0 h-screen w-auto object-contain" src="BrushRight.png" alt="Right decoration" />
+<img class="z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
 
-<div
-	style="background-image: url('indexBackground.png');
-			background-attachment: fixed;	"
-	class="Gridbox flex justify-center"
+<div	class=" Gridbox flex justify-center bg-fixed bg-cover bg- center"
 >
-	<div class="mt-6 grid grid-cols-5 gap-2">
+	<div class="mt-16 pt-7 grid grid-cols-5 gap-5">
 		{#each data.posts as post, i}
 			<div
-				class="max-w-8xl  flex justify-center overflow-x-auto  bg-transparent "
+				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
 			>
-				<div class="mb-2  overflow-y-auto">
+				<div class="mb-2 mt-0 overflow-y-auto">
 					<div
 						style="background-image: url('SpellCard_Test_BG.png');"
 						class="spellcard rounded-lg border-4 border-slate-900  bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
@@ -146,7 +145,7 @@
 							</a>
 						</div>
 
-						<div class="relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
+						<div class="z-30 relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
 							<div
 								class=" text-bold animate-marquee whitespace-nowrap text-white"
 							>
@@ -233,6 +232,8 @@
 		{/each}
 	</div>
 </div>
+
+
 
 <style>
 	.spellcard {
