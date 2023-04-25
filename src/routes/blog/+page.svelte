@@ -10,8 +10,26 @@
 		post.title.toLowerCase().includes(search.trim())
 	)
 
-	
+	import { onMount } from 'svelte';
+  let brushBottomImage: HTMLElement;
+
+  onMount(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    requestAnimationFrame(() => {
+      const scrollTop = window.scrollY;
+      const scrollProgress = scrollTop / 4; // Divide by 4 to make it half the speed of the previous implementation
+      brushBottomImage.style.transform = `translateY(${scrollProgress}px)`;
+    });
+  }
 </script>
+
+
+
+
+
 <div class="container ml-50 flex justify-center">
 	<div style="position: absolute; top: 56px;">
 	  <form on:input|preventDefault class="">
@@ -33,11 +51,11 @@
 
 <img class=" z-50 pointer-events-none decoration-left fixed left-0 top-0 h-screen w-auto object-contain" src="BrushLeft.png" alt="Left decoration" />
 <img class="z-50 pointer-events-none decoration-right fixed right-0 top-0 h-screen w-auto object-contain" src="BrushRight.png" alt="Right decoration" />
-<img class="z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
+<img bind:this={brushBottomImage} class=" z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
 
 <div	class="pt-7 Gridbox flex justify-center"
 >
-	<div class=" pt-16 grid grid-cols-5 gap-5">
+	<div class=" mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 				{#each filteredPosts as post, i}
 				<div
 				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "

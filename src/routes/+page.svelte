@@ -2,6 +2,56 @@
 	import { date } from '$lib/utils'
 
 	export let data
+
+
+	import { onMount } from 'svelte';
+  let brushBottomImage: HTMLElement;
+
+  onMount(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    requestAnimationFrame(() => {
+      const scrollTop = window.scrollY;
+      const scrollProgress = scrollTop / 4; // Divide by 4 to make it half the speed of the previous implementation
+      brushBottomImage.style.transform = `translateY(${scrollProgress}px)`;
+    });
+  }
+
+
+  import {  onDestroy } from 'svelte';
+  // Reactive variable for the number of columns
+  let columns = 'grid-cols-4';
+
+  // Function to update the number of columns
+  function updateColumns() {
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth >= 2560) {
+      columns = 'grid-cols-10';
+    } else if (windowWidth >= 2304) {
+      columns = 'grid-cols-9';
+    } else if (windowWidth >= 2048) {
+      columns = 'grid-cols-8';
+    } else if (windowWidth >= 1792) {
+      columns = 'grid-cols-7';
+    } else if (windowWidth >= 1536) {
+      columns = 'grid-cols-6';
+    } else if (windowWidth >= 1280) {
+      columns = 'grid-cols-5';
+    } else {
+      columns = 'grid-cols-4';
+    }
+  }
+  onMount(() => {
+    updateColumns(); // Call the function on component mount
+    window.addEventListener('resize', updateColumns); // Add the event listener
+  });
+
+  onDestroy(() => {
+    window.removeEventListener('resize', updateColumns); // Remove the event listener on component unmount
+  });
 </script>
 
 
@@ -17,13 +67,15 @@
 	</div>
 </div>
 
+
+  
 <img class=" z-50 pointer-events-none decoration-left fixed left-0 top-0 h-screen w-auto object-contain" src="BrushLeft.png" alt="Left decoration" />
 <img class="z-50 pointer-events-none decoration-right fixed right-0 top-0 h-screen w-auto object-contain" src="BrushRight.png" alt="Right decoration" />
-<img class="z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
+<img bind:this={brushBottomImage} class="z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
 
 <div	class=" Gridbox flex justify-center bg-fixed bg-cover bg- center"
 >
-	<div class="mt-16 pt-7 grid grid-cols-5 gap-5">
+	<div class="${columns} mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 		{#each data.posts as post, i}
 			<div
 				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
@@ -146,7 +198,7 @@
 							</a>
 						</div>
 
-						<div class="z-30 relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
+						<div class="relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
 							<div
 								class=" text-bold animate-marquee whitespace-nowrap text-white"
 							>
@@ -160,6 +212,10 @@
 								<span class="px-1">#Nice</span>
 							</div>
 						</div>
+
+						
+
+
 
 						<div class="mt-1 ml-2 flex justify-between">
 							<p class="mt-1 ml-2  text-xs text-black">
@@ -243,4 +299,6 @@
 		overflow: hidden; /* Hide overflowing content */
 		/* ... other existing styles ... */
 	}
+
+
 </style>
