@@ -3,3 +3,4 @@ import { handleHooks } from '@lucia-auth/sveltekit'
 
 // you can add more hooks here
 export const handle = handleHooks(auth)
+
