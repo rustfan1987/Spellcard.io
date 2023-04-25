@@ -24,6 +24,39 @@
       brushBottomImage.style.transform = `translateY(${scrollProgress}px)`;
     });
   }
+
+  import {  onDestroy } from 'svelte';
+  // Reactive variable for the number of columns
+  let columns = 'grid-cols-4';
+
+  // Function to update the number of columns
+  function updateColumns() {
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth >= 2560) {
+      columns = 'grid-cols-10';
+    } else if (windowWidth >= 2304) {
+      columns = 'grid-cols-9';
+    } else if (windowWidth >= 2048) {
+      columns = 'grid-cols-8';
+    } else if (windowWidth >= 1792) {
+      columns = 'grid-cols-7';
+    } else if (windowWidth >= 1536) {
+      columns = 'grid-cols-6';
+    } else if (windowWidth >= 1280) {
+      columns = 'grid-cols-5';
+    } else {
+      columns = 'grid-cols-4';
+    }
+  }
+  onMount(() => {
+    updateColumns(); // Call the function on component mount
+    window.addEventListener('resize', updateColumns); // Add the event listener
+  });
+
+  onDestroy(() => {
+    window.removeEventListener('resize', updateColumns); // Remove the event listener on component unmount
+  });
 </script>
 
 
@@ -53,9 +86,9 @@
 <img class="z-50 pointer-events-none decoration-right fixed right-0 top-0 h-screen w-auto object-contain" src="BrushRight.png" alt="Right decoration" />
 <img bind:this={brushBottomImage} class=" z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
 
-<div	class="pt-7 Gridbox flex justify-center"
+<div	class="pt-0 Gridbox flex justify-center"
 >
-	<div class=" mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
+	<div class="${columns} mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 				{#each filteredPosts as post, i}
 				<div
 				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
@@ -200,7 +233,7 @@
 
 							<div class="mt-2 mr-1.5">
 								<img
-									src="/cheems.fw.png"
+									src="/DescAvatar_CheemsFloat.png"
 									alt="cheems"
 									style="width: 45px; height: 80px;"
 								/>
@@ -220,7 +253,7 @@
 							</div>
 							<div class="mt-3 flex justify-center">
 								<img
-									src="/cheems.fw.png"
+									src="/Crest_Tornado.png"
 									alt="Favicon"
 									style="width: 35px; height: 35px;"
 								/>

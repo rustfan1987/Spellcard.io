@@ -73,16 +73,14 @@
 <img class="z-50 pointer-events-none decoration-right fixed right-0 top-0 h-screen w-auto object-contain" src="BrushRight.png" alt="Right decoration" />
 <img bind:this={brushBottomImage} class="z-49 pointer-events-none decoration-right fixed bottom-0 w-screen object-contain" src="BrushBottom.png" alt="Right decoration" />
 
-<div	class=" Gridbox flex justify-center bg-fixed bg-cover bg- center"
+<div	class=" pt-0 Gridbox flex justify-center"
 >
 	<div class="${columns} mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 		{#each data.posts as post, i}
-			<div
-				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
-			>
+			<div class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent ">
 				<div class="mb-2 mt-0 overflow-y-auto">
 					<div
-						style="background-image: url('SpellCard_Test_BG.png');"
+						style="background-image: url('SpellCard_Test_BG2.png');"
 						class="spellcard rounded-lg border-4 border-slate-900  bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
 					>
 						<!-- Your post content here -->
@@ -92,8 +90,7 @@
 									src="./Button_Favorite.png"
 									alt="Edit Card"
 									class="h-full w-full"
-								/></button
-							>
+								/></button>
 							<button class="h-6 w-6 rounded"
 								><img
 									src="./Button_Delete.png"
@@ -152,7 +149,7 @@
 									>
 								</div>
 
-								<div class="mx-2">
+								<div class="mx-2 ">
 									<img
 										src="./cheems.fw.png"
 										alt="Favicon"
@@ -215,21 +212,23 @@
 
 						
 
-
-
+						
 						<div class="mt-1 ml-2 flex justify-between">
-							<p class="mt-1 ml-2  text-xs text-black">
-								{post.description}
+							<p class="mt-1 ml-2 text-xs text-black w-24 whitespace-nowrap overflow-hidden overflow-ellipsis">
+							  {post.description}
 							</p>
-
+						  
 							<div class="mt-2 mr-1.5">
-								<img
-									src="/cheems.fw.png"
-									alt="cheems"
-									style="width: 45px; height: 80px;"
-								/>
+							  <img
+								src="/DescAvatar_CheemsFloat.png"
+								alt="cheems"
+								class="w-11 h-20 object-cover"
+							  />
 							</div>
-						</div>
+						  </div>
+
+
+
 
 						<!-- Public/Private signafier, image, members online -->
 						<div class="mb- grid grid-cols-3  items-start">
@@ -244,7 +243,7 @@
 							</div>
 							<div class="mt-3 flex justify-center">
 								<img
-									src="/cheems.fw.png"
+									src="/Crest_Tornado.png"
 									alt="Favicon"
 									style="width: 35px; height: 35px;"
 								/>

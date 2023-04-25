@@ -17,7 +17,7 @@
 
 <nav class="z-10 position-relative mt-6 mr-4 flex justify-center ">
 	<a class="unstyled text-xl mr-4 text-white" href="/">
-		<b>🔥 Dataspells</b>
+		<b>✨Dataspells</b>
 	</a>
 
 	<div class=" flex items-center gap-4">

@@ -36,7 +36,7 @@
 
 
 
-<div	class=" Gridbox flex justify-center bg-fixed bg-cover bg- center"
+<div	class=" pt-0 Gridbox flex justify-center"
 >
 	<div class="mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 		{#each data.posts as post, i}
@@ -193,7 +193,7 @@
 
 							<div class="mt-2 mr-1.5">
 								<img
-									src="/cheems.fw.png"
+									src="/DescAvatar_CheemsFloat.png"
 									alt="cheems"
 									style="width: 45px; height: 80px;"
 								/>
@@ -213,7 +213,7 @@
 							</div>
 							<div class="mt-3 flex justify-center">
 								<img
-									src="/cheems.fw.png"
+									src="/Crest_Tornado.png"
 									alt="Favicon"
 									style="width: 35px; height: 35px;"
 								/>

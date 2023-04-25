@@ -12,15 +12,25 @@
 </script>
 
 <svelte:head>
-	<title>Blog</title>
-	<link rel="icon" href="https://fav.farm/🔥" />
+	<title>Dataspells</title>
+	<link rel="icon" href="https://fav.farm/✨" />
 </svelte:head>
 
-<div class="background bg-fixed bg-cover bg-center bg-no-repeat h-screen" style="background-image: url('indexBackground.png'); background-attachment: fixed;"></div>
+
+<div class="background bg-fixed bg-cover bg-center bg-no-repeat h-screen" 
+	 style="background-image: url('indexBackground.png'); background-attachment: fixed;">
+</div>
+
 <Heading />
+
 <div class="content-container">
 	<slot />
 </div>
+
+
+
+
+
 
 <style>
 	.background {
