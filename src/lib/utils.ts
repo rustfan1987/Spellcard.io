@@ -4,6 +4,7 @@ export function truncate(text: string, limit = 40) {
 
 export function date(date: Date) {
 	return new Date(date).toLocaleDateString('en', {
-		dateStyle: 'medium',
+		dateStyle: 'short',
 	})
 }
+

@@ -38,14 +38,14 @@
 
 <div	class=" pt-0 Gridbox flex justify-center"
 >
-	<div class="mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
+	<div class="grid-container mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 		{#each data.posts as post, i}
-			<div
+		<div
 				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
 			>
 				<div class="mb-2 mt-0 overflow-y-auto">
 					<div
-						style="background-image: url('SpellCard_Test_BG.png');"
+						style="background-image: url('SpellCard_Test_BG3.png');"
 						class="spellcard rounded-lg border-4 border-slate-900  bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
 					>
 						<!-- Your post content here -->
@@ -115,9 +115,9 @@
 									>
 								</div>
 
-								<div class="mx-2">
+								<div class="mx-2 pr-0.5">
 									<img
-										src="./cheems.fw.png"
+										src="./Avatar_Demon_1.png"
 										alt="Favicon"
 										style="width: 103px; height: 102x;"
 									/>
@@ -161,75 +161,66 @@
 							</a>
 						</div>
 
-
-
-
-					 
 						<div class="relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
 							<div
 								class=" text-bold animate-marquee whitespace-nowrap text-white"
 							>
-								<span class="px-1">#Cheems</span>
-								<span class="px-1">#Nice</span>
-								<span class="px-1">#Cheems</span>
-								<span class="px-1">#Cheems</span>
-								<span class="px-1">#Cheems</span>
-								<span class="px-1">#Nice</span>
-								<span class="px-1">#Nice</span>
+								<span class="px-1">#Soulpact</span>
+								<span class="px-1">#Sepolia</span>
+								<span class="px-1">#ETH</span>
+								<span class="px-1">#FairOdds</span>
+								<span class="px-1">#Casino</span>
+								<span class="px-1">#Crypto</span>
+								<span class="px-1">#Web3</span>
 								<span class="px-1">#Nice</span>
 							</div>
 						</div>
-					 
 
-
-
-
-
-						<div class="mt-1 ml-2 flex justify-between">
-							<p class="mt-1 ml-2  text-xs text-black">
+						<div class="mt-2 mb-1 ml-4 flex justify-between">
+							<p class="mt-1 text-xs text-black flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
+							   style="line-height: 0.9;">
 								{post.description}
 							</p>
-							
-
-							<div class="mt-2 mr-1.5">
+						
+							<div class="mt-2 ml-0 flex-shrink-0">
 								<img
-									src="/DescAvatar_CheemsFloat.png"
+									src="/DescAvatar_Demon_1.png"
 									alt="cheems"
-									style="width: 45px; height: 80px;"
+									class="w-11 h-20 object-cover"
 								/>
 							</div>
 						</div>
 
-						<!-- Public/Private signafier, image, members online -->
-						<div class="mb- grid grid-cols-3  items-start">
-							<div class="ml-6 mt-1 flex flex-col ">
-								<span class=" mt-1 mb-1 ml-0.5 text-xs text-white">
-									Public
-								</span>
+				<!-- Public/Private signafier, image, members online -->
+				<div class="mb- grid grid-cols-3  items-start">
+					<div class="ml-5 pl-0.5 mt-0.5 flex flex-col ">
+						<span class=" pl-1 mb-1 ml-0.5 text-xs text-white">
+							Public
+						</span>
 
-								<span class="mt- ml-1.5 mt-0.5 text-sm text-green-500"
-									>Size</span
-								>
-							</div>
-							<div class="mt-3 flex justify-center">
-								<img
-									src="/Crest_Tornado.png"
-									alt="Favicon"
-									style="width: 35px; height: 35px;"
-								/>
-							</div>
+						<span class="mt-1.5px ml-1 pt 1px text-sm text-white"
+							>NEW</span
+						>
+					</div>
+					<div class="mt-1.5 flex justify-center">
+						<img
+							src="/Crest_Demon_1.png"
+							alt="Favicon"
+							style="width: 42px; height: 42px;"
+						/>
+					</div>
 
-							<div class="flex flex-col ">
-								<span
-									class="mt-2 mr-6 inline-block text-center text-xs text-white"
-									>15</span
-								>
+					<div class="flex flex-col ml-[-4px] ">
+						<span
+							class="mt- pr-7 inline-block text-center text-xs text-white whitespace-nowrap"
+							>15 online</span
+						>
 
-								<span class="inline-block text-xs text-white">
-									{date(post.createdAt)}
-								</span>
-							</div>
-						</div>
+						<span class="mt-2 ml-2 inline-block text-xs text-white whitespace-nowrap" style="font-size: 0.7rem;">
+							{date(post.createdAt)}
+						</span>
+					</div>
+				</div>
 
 						<div class="mb-1 h-2 rounded-full bg-gray-300">
 							<div
@@ -239,19 +230,15 @@
 
 						<!-- Six emojis in a row -->
 						<div class="mt-1.5 flex justify-between">
-							<span class="text-1xl">😀</span>
-							<span class="text-1xl">😂</span>
-							<span class="text-1xl">😍</span>
-							<span class="text-1xl">🤔</span>
-							<span class="text-1xl">🤢</span>
-							<span class="text-1xl">😡</span>
+							<span class="text-1xl">😈</span>
+							<span class="text-1xl">🥇</span>
+							<span class="text-1xl">💰</span>
+							<span class="text-1xl">🐐</span>
+							<span class="text-1xl">🔥 </span>
+							<span class="text-1xl">👻</span>
 						</div>
 
-						<p
-							class="mt-3 flex justify-center text-gray-600 dark:text-gray-400"
-						>
-							{date(post.createdAt)}
-						</p>
+
 					</div>
 				</div>
 			</div>
@@ -270,4 +257,13 @@
 		overflow: hidden; /* Hide overflowing content */
 		/* ... other existing styles ... */
 	}
+
+	.grid-container::-webkit-scrollbar {
+    display: none;
+}
+
+.grid-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 </style>

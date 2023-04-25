@@ -88,7 +88,7 @@
 
 <div	class="pt-0 Gridbox flex justify-center"
 >
-	<div class="${columns} mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
+	<div class="grid-container ${columns} mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 				{#each filteredPosts as post, i}
 				<div
 				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
@@ -226,50 +226,51 @@
 							</div>
 						</div>
 
-						<div class="mt-1 ml-2 flex justify-between">
-							<p class="mt-1 ml-2  text-xs text-black">
+						<div class="mt-2 mb-1 ml-4 flex justify-between">
+							<p class="mt-1 text-xs text-black flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
+							   style="line-height: 0.9;">
 								{post.description}
 							</p>
-
-							<div class="mt-2 mr-1.5">
+						
+							<div class="mt-2 ml-0 flex-shrink-0">
 								<img
 									src="/DescAvatar_CheemsFloat.png"
 									alt="cheems"
-									style="width: 45px; height: 80px;"
+									class="w-11 h-20 object-cover"
 								/>
 							</div>
 						</div>
 
-						<!-- Public/Private signafier, image, members online -->
-						<div class="mb- grid grid-cols-3  items-start">
-							<div class="ml-6 mt-1 flex flex-col ">
-								<span class=" mt-1 mb-1 ml-0.5 text-xs text-white">
-									Public
-								</span>
+				<!-- Public/Private signafier, image, members online -->
+				<div class="mb- grid grid-cols-3  items-start">
+					<div class="ml-5 pl-0.5 mt-0.5 flex flex-col ">
+						<span class=" pl-1 mb-1 ml-0.5 text-xs text-white">
+							Public
+						</span>
 
-								<span class="mt- ml-1.5 mt-0.5 text-sm text-green-500"
-									>Size</span
-								>
-							</div>
-							<div class="mt-3 flex justify-center">
-								<img
-									src="/Crest_Tornado.png"
-									alt="Favicon"
-									style="width: 35px; height: 35px;"
-								/>
-							</div>
+						<span class="mt-1.5px ml-1 pt 1px text-sm text-white"
+							>NEW</span
+						>
+					</div>
+					<div class="mt-3 flex justify-center">
+						<img
+							src="/Crest_Tornado.png"
+							alt="Favicon"
+							style="width: 35px; height: 35px;"
+						/>
+					</div>
 
-							<div class="flex flex-col ">
-								<span
-									class="mt-2 mr-6 inline-block text-center text-xs text-white"
-									>15</span
-								>
+					<div class="flex flex-col ml-[-4px] ">
+						<span
+							class="mt- pr-7 inline-block text-center text-xs text-white whitespace-nowrap"
+							>15 online</span
+						>
 
-								<span class="inline-block text-xs text-white">
-									{date(post.createdAt)}
-								</span>
-							</div>
-						</div>
+						<span class="mt-2 ml-2 inline-block text-xs text-white whitespace-nowrap" style="font-size: 0.7rem;">
+							{date(post.createdAt)}
+						</span>
+					</div>
+				</div>
 
 						<div class="mb-1 h-2 rounded-full bg-gray-300">
 							<div
@@ -287,11 +288,7 @@
 							<span class="text-1xl">😡</span>
 						</div>
 
-						<p
-							class="mt-3 flex justify-center text-gray-600 dark:text-gray-400"
-						>
-							{date(post.createdAt)}
-						</p>
+
 					</div>
 				</div>
 			</div>
@@ -309,5 +306,12 @@
 		 /* Hide overflowing content */
 		/* ... other existing styles ... */
 	}
+	.grid-container::-webkit-scrollbar {
+    display: none;
+}
 
+.grid-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 </style>

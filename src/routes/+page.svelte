@@ -77,7 +77,9 @@
 >
 	<div class="${columns} mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 		{#each data.posts as post, i}
-			<div class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent ">
+		<div
+				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
+			>
 				<div class="mb-2 mt-0 overflow-y-auto">
 					<div
 						style="background-image: url('SpellCard_Test_BG2.png');"
@@ -90,7 +92,8 @@
 									src="./Button_Favorite.png"
 									alt="Edit Card"
 									class="h-full w-full"
-								/></button>
+								/></button
+							>
 							<button class="h-6 w-6 rounded"
 								><img
 									src="./Button_Delete.png"
@@ -149,7 +152,7 @@
 									>
 								</div>
 
-								<div class="mx-2 ">
+								<div class="mx-2">
 									<img
 										src="./cheems.fw.png"
 										alt="Favicon"
@@ -210,56 +213,51 @@
 							</div>
 						</div>
 
-						
-
-						
-						<div class="mt-1 ml-2 flex justify-between">
-							<p class="mt-1 ml-2 text-xs text-black w-24 whitespace-nowrap overflow-hidden overflow-ellipsis">
-							  {post.description}
+						<div class="mt-2 mb-1 ml-4 flex justify-between">
+							<p class="mt-1 text-xs text-black flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
+							   style="line-height: 0.9;">
+								{post.description}
 							</p>
-						  
-							<div class="mt-2 mr-1.5">
-							  <img
-								src="/DescAvatar_CheemsFloat.png"
-								alt="cheems"
-								class="w-11 h-20 object-cover"
-							  />
-							</div>
-						  </div>
-
-
-
-
-						<!-- Public/Private signafier, image, members online -->
-						<div class="mb- grid grid-cols-3  items-start">
-							<div class="ml-6 mt-1 flex flex-col ">
-								<span class=" mt-1 mb-1 ml-0.5 text-xs text-white">
-									Public
-								</span>
-
-								<span class="mt- ml-1.5 mt-0.5 text-sm text-green-500"
-									>Size</span
-								>
-							</div>
-							<div class="mt-3 flex justify-center">
+						
+							<div class="mt-2 ml-0 flex-shrink-0">
 								<img
-									src="/Crest_Tornado.png"
-									alt="Favicon"
-									style="width: 35px; height: 35px;"
+									src="/DescAvatar_CheemsFloat.png"
+									alt="cheems"
+									class="w-11 h-20 object-cover"
 								/>
 							</div>
-
-							<div class="flex flex-col ">
-								<span
-									class="mt-2 mr-6 inline-block text-center text-xs text-white"
-									>15</span
-								>
-
-								<span class="inline-block text-xs text-white">
-									{date(post.createdAt)}
-								</span>
-							</div>
 						</div>
+
+				<!-- Public/Private signafier, image, members online -->
+				<div class="mb- grid grid-cols-3  items-start">
+					<div class="ml-5 pl-0.5 mt-0.5 flex flex-col ">
+						<span class=" pl-1 mb-1 ml-0.5 text-xs text-white">
+							Public
+						</span>
+
+						<span class="mt-1.5px ml-1 pt 1px text-sm text-white"
+							>NEW</span
+						>
+					</div>
+					<div class="mt-3 flex justify-center">
+						<img
+							src="/Crest_Tornado.png"
+							alt="Favicon"
+							style="width: 35px; height: 35px;"
+						/>
+					</div>
+
+					<div class="flex flex-col ml-[-4px] ">
+						<span
+							class="mt- pr-7 inline-block text-center text-xs text-white whitespace-nowrap"
+							>15 online</span
+						>
+
+						<span class="mt-2 ml-2 inline-block text-xs text-white whitespace-nowrap" style="font-size: 0.7rem;">
+							{date(post.createdAt)}
+						</span>
+					</div>
+				</div>
 
 						<div class="mb-1 h-2 rounded-full bg-gray-300">
 							<div
@@ -277,11 +275,7 @@
 							<span class="text-1xl">😡</span>
 						</div>
 
-						<p
-							class="mt-3 flex justify-center text-gray-600 dark:text-gray-400"
-						>
-							{date(post.createdAt)}
-						</p>
+
 					</div>
 				</div>
 			</div>
