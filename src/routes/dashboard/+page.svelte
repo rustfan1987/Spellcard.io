@@ -52,7 +52,7 @@
 						class="spellcard rounded-lg border-4 border-slate-900  bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
 					>
 						<!-- Your post content here -->
-						<div class="mt-4 mb-1 flex justify-around ">
+						<div class="mt-3.5 mb-2 flex justify-around ">
 							<button class="h-6 w-6 rounded"
 								><img
 									src="./Button_Favorite.png"
@@ -91,16 +91,16 @@
 						</div>
 						<div class="mt-1.5">
 							<div class=" flex justify-center ">
-								<div class="mb-2.5 flex flex-col justify-between ">
-									<button class="h-6 w-6 rounded"
+								<div class="mb-2.5  flex flex-col justify-between ">
+									<button class="h-6 w-9 rounded"
 										><img
 											src="./Button_Trinket.png"
 											alt="Trinket Icon"
-											class="h-full w-full"
+											class=""
 											style="width: 40px; height: 40px;"
 										/></button
 									>
-									<button class="h-6 w-6 rounded"
+									<button class="h-6 w-9 rounded"
 										><img
 											src="./Button_Copy.png"
 											alt="Save Card"
@@ -108,7 +108,7 @@
 											style="width: 40px; height: 40px;"
 										/></button
 									>
-									<button class="h-6 w-6 rounded"
+									<button class="h-6 w-9 rounded"
 										><img
 											src="./Button_Settings.png"
 											alt="Edit Card"
@@ -118,16 +118,16 @@
 									>
 								</div>
 
-								<div class="mx-2 pr-0.5">
+								<div class="">
 									<img
 										src="./Avatar_Demon_1.png"
 										alt="Favicon"
-										style="width: 103px; height: 102x;"
+										style="width: 102px; height: 102x;"
 									/>
 								</div>
 
 								<div class="mb-2.5 flex flex-col justify-between ">
-									<button class="h-6 w-6 rounded"
+									<button class="h-6 w-9  rounded"
 										><img
 											src="./Button_Emblem.png"
 											alt="Edit Card"
@@ -135,7 +135,7 @@
 											style="width: 40px; height: 40px;"
 										/></button
 									>
-									<button class="h-6 w-6 rounded"
+									<button class="h-6 w-9  rounded"
 										><img
 											src="./Button_Tavern.png"
 											alt="Edit Card"
@@ -143,7 +143,7 @@
 											style="width: 40px; height: 40px;"
 										/></button
 									>
-									<button class="h-6 w-6 rounded"
+									<button class="h-6 w-9 rounded"
 										><img
 											src="./Button_Crypto.png"
 											alt="Edit Card"
@@ -156,16 +156,14 @@
 						</div>
 
 						<div class="mt-1 flex justify-center">
-							<a
-							  class="unstyled antialiased tracking-normal text-lg text-white font-allerta-stencil"
-							  href="/blog/{post.slug}"
-							>
+							<a class="unstyled antialiased tracking-normal text-lg text-slate-100 font-allerta-stencil"
+							  href="/blog/{post.slug}">
 							  {post.title}
 							</a>
 						  </div>
 
 						<div class="relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
-							<div class="font-bruno-ace text-bold animate-marquee whitespace-nowrap">
+							<div class="font-bruno-ace text-sm text-bold animate-marquee whitespace-nowrap">
 							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">Soulpact</span>
 							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">Sepolia</span>
 							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">ETH</span>
@@ -177,7 +175,7 @@
 							</div>
 						  </div>
 
-						<div class="mt-2 mb-1 ml-4 flex justify-between">
+						<div class="mt-2.5 mb-1 ml-4 flex justify-between">
 							<p class="mt-1 text-xs text-black tracking- flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
 							   style="line-height: 0.9;">
 								{post.description}
@@ -193,17 +191,17 @@
 						</div>
 
 				<!-- Public/Private signafier, image, members online -->
-				<div class="mb- grid grid-cols-3  items-start">
-					<div class="ml-5 pl-0.5 mt-0.5 flex flex-col ">
-						<span class=" pl-0.5 mb-1 ml-0.5 text-xs text-white">
+				<div class=" grid grid-cols-3  items-start">
+					<div class="ml-3.5 pl-0.5 mt-0. flex flex-col ">
+						<span class=" pl-1.5 mb-1 ml-0.5 text-xs text-white">
 							Public
 						</span>
 
-						<span class="mt-0.5 ml-1 pt 1px text-sm text-white"
-							>NEW</span
+						<span class="mt-1  text-xs text-red-600 font-medium italic font-allerta-stencil text-center"
+							>SPICY</span
 						>
 					</div>
-					<div class="mt-1.5 flex justify-center">
+					<div class="mt-1  ml-0.5 flex justify-center">
 						<img
 							src="/Crest_Demon_1.png"
 							alt="Favicon"
@@ -213,24 +211,26 @@
 
 					<div class="flex flex-col ml-[-4px] ">
 						<span
-							class="mt-0.5 pr-3 inline-block text-center text-xs text-white whitespace-nowrap"
-							>Link</span
+							class="mt- pr-3 inline-block text-center text-xs text-white whitespace-nowrap"
+							>Game</span
 						>
 
-						<span class="mt-1.5 ml-2 inline-block text-xs text-white whitespace-nowrap" style="font-size: 0.7rem;">
+						<span class="mt-2 ml-2 inline-block text-xs text-white whitespace-nowrap" style="font-size: 0.7rem;">
 							{date(post.createdAt)}
 						</span>
 					</div>
 				</div>
 
-						<div class="mb-1 h-2 rounded-full bg-gray-300">
-							<div
-								class="h-full rounded-full bg-gradient-to-r from-black to-red-700"
-							/>
-						</div>
+				<div class=" mt-[-2px]  flex justify-center">
+					<img
+						src="/expBAR_Demon_1.png"
+						alt="Favicon"
+						style=""
+					/>
+				</div>
 
 						<!-- Six emojis in a row -->
-						<div class="mt-1.5 flex justify-between">
+						<div class="mt-0.5 flex justify-between">
 							<span class="text-1xl">😈</span>
 							<span class="text-1xl">🥇</span>
 							<span class="text-1xl">💰</span>

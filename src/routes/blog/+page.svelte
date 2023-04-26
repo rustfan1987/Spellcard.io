@@ -137,70 +137,70 @@
 							>
 						</div>
 						<div class="mt-1.5">
-							<div class=" flex justify-center ">
-								<div class="mb-2.5 flex flex-col justify-between ">
-									<button class="h-6 w-6 rounded"
-										><img
-											src="./Button_Trinket.png"
-											alt="Trinket Icon"
-											class="h-full w-full"
-											style="width: 40px; height: 40px;"
-										/></button
-									>
-									<button class="h-6 w-6 rounded"
-										><img
-											src="./Button_Copy.png"
-											alt="Save Card"
-											class="h-full w-full"
-											style="width: 40px; height: 40px;"
-										/></button
-									>
-									<button class="h-6 w-6 rounded"
-										><img
-											src="./Button_Settings.png"
-											alt="Edit Card"
-											class="h-full w-full"
-											style="width: 40px; height: 40px;"
-										/></button
-									>
-								</div>
+  <div class="flex justify-center">
+    <div class="mb-2.5 flex flex-col justify-between">
+      <button class="h-6 w-6 rounded">
+        <img
+          src="./Button_Trinket.png"
+          alt="Trinket Icon"
+          class="h-full w-full"
+          style="width: 50px; height: 40px;"
+        />
+      </button>
+      <button class="h-6 w-6 rounded">
+        <img
+          src="./Button_Copy.png"
+          alt="Save Card"
+          class="h-full w-full"
+          style="width: 50px; height: 40px;"
+        />
+      </button>
+      <button class="h-6 w-6 rounded">
+        <img
+          src="./Button_Settings.png"
+          alt="Edit Card"
+          class="h-full w-full"
+          style="width: 50px; height: 40px;"
+        />
+      </button>
+    </div>
 
-								<div class="mx-2">
-									<img
-										src="./cheems.fw.png"
-										alt="Favicon"
-										style="width: 103px; height: 102x;"
-									/>
-								</div>
+    <div class="mx-0">
+      <img
+        src="./cheems.fw.png"
+        alt="Favicon"
+        style="width: 103px; height: 102x;"
+      />
+    </div>
 
-								<div class="mb-2.5 flex flex-col justify-between ">
-									<button class="h-6 w-6 rounded"
-										><img
-											src="./Button_Emblem.png"
-											alt="Edit Card"
-											class="h-full w-full"
-											style="width: 40px; height: 40px;"
-										/></button
-									>
-									<button class="h-6 w-6 rounded"
-										><img
-											src="./Button_Tavern.png"
-											alt="Edit Card"
-											class="h-full w-full"
-											style="width: 40px; height: 40px;"
-										/></button
-									>
-									<button class="h-6 w-6 rounded"
-										><img
-											src="./Button_Crypto.png"
-											alt="Edit Card"
-											class="h-full w-full"
-											style="width: 40px; height: 40px;"
-										/></button
-									>
-								</div>
-							</div>
-						</div>
+    <div class="mb-2.5 flex flex-col justify-between">
+      <button class="h-6 w-6 rounded">
+        <img
+          src="./Button_Emblem.png"
+          alt="Edit Card"
+          class="h-full w-full"
+          style="width: 50px; height: 40px;"
+        />
+      </button>
+      <button class="h-6 w-6 rounded">
+        <img
+          src="./Button_Tavern.png"
+          alt="Edit Card"
+          class="h-full w-full"
+          style="width: 50px; height: 40px;"
+        />
+      </button>
+      <button class="h-6 w-6 rounded">
+        <img
+          src="./Button_Crypto.png"
+          alt="Edit Card"
+          class="h-full w-full"
+          style="width: 50px; height: 40px;"
+        />
+      </button>
+    </div>
+  </div>
+</div>
 
 						<div class="mt-1.5 flex justify-center">
 							<a
