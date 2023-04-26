@@ -21,17 +21,19 @@
 </script>
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Permanent+Marker&family=Saira+Stencil+One&display=swap" rel="stylesheet"></head>
+	<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Permanent+Marker&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
 
 <div class="my- flex justify-center">
 
 </div>
 
 <div class="container ml-48 flex justify-center">
-	<div style="position: absolute; top: 48px;">
-	  <div class="flex justify-center mt-2">
-		<a class="inline-block bg-slate-500 hover:bg-blue-600 rounded-lg px-4 py-2 text-white font-bold capitalize" href="/dashboard/create">
-		  + Create a new Spell
+	<div style="position: absolute; top: 52px;">
+	  <div class="flex justify-center ">
+		<a class=" border-x-indigo-50 opacity-90 border mt-[-3px]  bg-gradient-to-r from-slate-900 font-bruno-ace unstyled text-base inline-block bg-transparent hover:bg-blue-400 rounded-2xl px-1 py-[-1px] text-white font-semi-bold capitalize" href="/dashboard/create">
+			➕ Create new Card 
 		</a>
 	  </div>
 	</div>
@@ -44,9 +46,9 @@
 	<div class="grid-container mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 		{#each data.posts as post, i}
 		<div
-				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
+				class="mt- max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
 			>
-				<div class="mb-2 mt-0 overflow-y-auto">
+				<div class="mb- mt-0 overflow-y-auto">
 					<div
 						style="background-image: url('SpellCard_Test_BG3.png');"
 						class="spellcard rounded-lg border-4 border-slate-900  bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
@@ -156,7 +158,7 @@
 						</div>
 
 						<div class="mt-1 flex justify-center">
-							<a class="unstyled antialiased tracking-normal text-lg text-slate-100 font-allerta-stencil"
+							<a class=" unstyled antialiased tracking-normal text-lg text-slate-100 .font-creepster"
 							  href="/blog/{post.slug}">
 							  {post.title}
 							</a>
@@ -176,7 +178,7 @@
 						  </div>
 
 						<div class="mt-2.5 mb-1 ml-4 flex justify-between">
-							<p class="mt-1 text-xs text-black tracking- flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
+							<p class="mt-2 ml-0.5 text-xs text-black tracking- font-allerta-stencil flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
 							   style="line-height: 0.9;">
 								{post.description}
 							</p>
@@ -193,11 +195,11 @@
 				<!-- Public/Private signafier, image, members online -->
 				<div class=" grid grid-cols-3  items-start">
 					<div class="ml-3.5 pl-0.5 mt-0. flex flex-col ">
-						<span class=" pl-1.5 mb-1 ml-0.5 text-xs text-white">
+						<span class=" pl-1.5 mb-1 ml-0.5 text-xs text-green-400">
 							Public
 						</span>
 
-						<span class="mt-1  text-xs text-red-600 font-medium italic font-allerta-stencil text-center"
+						<span class="mt-0.5  text-sm text-red-700 font-medium italic font-creepster text-center"
 							>SPICY</span
 						>
 					</div>
@@ -211,11 +213,11 @@
 
 					<div class="flex flex-col ml-[-4px] ">
 						<span
-							class="mt- pr-3 inline-block text-center text-xs text-white whitespace-nowrap"
+							class="mt- pr-3 inline-block text-center text-xs text-blue-300 whitespace-nowrap"
 							>Game</span
 						>
 
-						<span class="mt-2 ml-2 inline-block text-xs text-white whitespace-nowrap" style="font-size: 0.7rem;">
+						<span class="mt-2 ml-1.5 mr-4 flex justify-center   text-xs font-allerta-stencil text-slate-900 whitespace-nowrap" style="font-size: 0.7rem;">
 							{date(post.createdAt)}
 						</span>
 					</div>
@@ -273,7 +275,9 @@
 
   .font-allerta-stencil {
 	font-family: 'Allerta Stencil', sans-serif;
-	
-	
+}
+  .font-creepster {
+	font-family: 'Creepster', cursive;	
   }
+  
 </style>

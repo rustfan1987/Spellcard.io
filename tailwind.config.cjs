@@ -9,13 +9,12 @@ const config = {
 	],
 	theme: {
 	  extend: {
-		
 		textColor: {
 		  'ice-blue': '#04AFEB',
 		  'electric-yellow': '#f5d70e',
 		},
 		animation: {
-		  marquee: 'marquee 25s linear infinite',
+		  marquee: 'marquee 25s linear infinite alternate',
 		},
 		keyframes: {
 		  marquee: {
