@@ -199,22 +199,20 @@
 						</div>
 
 						<div class="relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
-							<div
-								class=" text-bold animate-marquee whitespace-nowrap text-white"
-							>
-								<span class="px-1">#Cheems</span>
-								<span class="px-1">#Nice</span>
-								<span class="px-1">#Cheems</span>
-								<span class="px-1">#Cheems</span>
-								<span class="px-1">#Cheems</span>
-								<span class="px-1">#Nice</span>
-								<span class="px-1">#Nice</span>
-								<span class="px-1">#Nice</span>
+							<div class="text-bold animate-marquee whitespace-nowrap text-white">
+							  <span class="font-anita px-1">#Soulpact</span>
+							  <span class="font-anita px-1">#Sepolia</span>
+							  <span class="font-anita px-1">#ETH</span>
+							  <span class="font-anita px-1">#FairOdds</span>
+							  <span class="font-anita px-1">#Casino</span>
+							  <span class="font-anita px-1">#Crypto</span>
+							  <span class="font-anita px-1">#Web3</span>
+							  <span class="font-anita px-1">#Nice</span>
 							</div>
-						</div>
+						  </div>
 
 						<div class="mt-2 mb-1 ml-4 flex justify-between">
-							<p class="mt-1 text-xs text-black flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
+							<p class="mt-1 text-xs text-black text-center flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
 							   style="line-height: 0.9;">
 								{post.description}
 							</p>
@@ -293,5 +291,8 @@
 		/* ... other existing styles ... */
 	}
 
-
+	@font-face {
+		  font-family: 'Anita Semi-square';
+  src: url('/fonts/Anita Semi-square.ttf') format('truetype');
+}
 </style>

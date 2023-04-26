@@ -17,8 +17,11 @@
       brushBottomImage.style.transform = `translateY(${scrollProgress}px)`;
     });
   }
+  
 </script>
-
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Permanent+Marker&family=Saira+Stencil+One&display=swap" rel="stylesheet"></head>
 
 <div class="my- flex justify-center">
 
@@ -152,32 +155,30 @@
 							</div>
 						</div>
 
-						<div class="mt-1.5 flex justify-center">
+						<div class="mt-1 flex justify-center">
 							<a
-								class=" unstyled font-semibold capitalize text-white"
-								href="/blog/{post.slug}"
+							  class="unstyled antialiased tracking-normal text-lg text-white font-allerta-stencil"
+							  href="/blog/{post.slug}"
 							>
-								{post.title}
+							  {post.title}
 							</a>
-						</div>
+						  </div>
 
 						<div class="relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
-							<div
-								class=" text-bold animate-marquee whitespace-nowrap text-white"
-							>
-								<span class="px-1">#Soulpact</span>
-								<span class="px-1">#Sepolia</span>
-								<span class="px-1">#ETH</span>
-								<span class="px-1">#FairOdds</span>
-								<span class="px-1">#Casino</span>
-								<span class="px-1">#Crypto</span>
-								<span class="px-1">#Web3</span>
-								<span class="px-1">#Nice</span>
+							<div class="font-bruno-ace text-bold animate-marquee whitespace-nowrap">
+							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">Soulpact</span>
+							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">Sepolia</span>
+							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">ETH</span>
+							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">FairOdds</span>
+							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">Casino</span>
+							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">Crypto</span>
+							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">Web3</span>
+							  <span class="text-ice-blue">#</span><span class="text-electric-yellow px-1">Nice</span>
 							</div>
-						</div>
+						  </div>
 
 						<div class="mt-2 mb-1 ml-4 flex justify-between">
-							<p class="mt-1 text-xs text-black flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
+							<p class="mt-1 text-xs text-black tracking- flex-grow whitespace-normal overflow-hidden overflow-ellipsis"
 							   style="line-height: 0.9;">
 								{post.description}
 							</p>
@@ -194,11 +195,11 @@
 				<!-- Public/Private signafier, image, members online -->
 				<div class="mb- grid grid-cols-3  items-start">
 					<div class="ml-5 pl-0.5 mt-0.5 flex flex-col ">
-						<span class=" pl-1 mb-1 ml-0.5 text-xs text-white">
+						<span class=" pl-0.5 mb-1 ml-0.5 text-xs text-white">
 							Public
 						</span>
 
-						<span class="mt-1.5px ml-1 pt 1px text-sm text-white"
+						<span class="mt-0.5 ml-1 pt 1px text-sm text-white"
 							>NEW</span
 						>
 					</div>
@@ -212,11 +213,11 @@
 
 					<div class="flex flex-col ml-[-4px] ">
 						<span
-							class="mt- pr-7 inline-block text-center text-xs text-white whitespace-nowrap"
-							>15 online</span
+							class="mt-0.5 pr-3 inline-block text-center text-xs text-white whitespace-nowrap"
+							>Link</span
 						>
 
-						<span class="mt-2 ml-2 inline-block text-xs text-white whitespace-nowrap" style="font-size: 0.7rem;">
+						<span class="mt-1.5 ml-2 inline-block text-xs text-white whitespace-nowrap" style="font-size: 0.7rem;">
 							{date(post.createdAt)}
 						</span>
 					</div>
@@ -224,7 +225,7 @@
 
 						<div class="mb-1 h-2 rounded-full bg-gray-300">
 							<div
-								class="h-full rounded-full bg-gradient-to-r from-black to-blue-700"
+								class="h-full rounded-full bg-gradient-to-r from-black to-red-700"
 							/>
 						</div>
 
@@ -266,4 +267,13 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+.font-bruno-ace {
+    font-family: 'Bruno Ace', cursive;
+  }
+
+  .font-allerta-stencil {
+	font-family: 'Allerta Stencil', sans-serif;
+	
+	
+  }
 </style>
