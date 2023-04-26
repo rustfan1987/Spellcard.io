@@ -32,7 +32,7 @@
 <div class="container ml-48 flex justify-center">
 	<div style="position: absolute; top: 52px;">
 	  <div class="flex justify-center ">
-		<a class=" border-x-indigo-50 opacity-90 border mt-[-3px]  bg-gradient-to-r from-slate-900 font-bruno-ace unstyled text-base inline-block bg-transparent hover:bg-blue-400 rounded-2xl px-1 py-[-1px] text-white font-semi-bold capitalize" href="/dashboard/create">
+		<a class=" border-x-indigo-50 opacity-90 border mt-[-3px]  bg-gradient-to-r from-slate-900 font-bruno-ace unstyled text-base inline-block bg-transparent hover:bg-blue-00 rounded-sm px-1 py-[-1px] text-white font-semi-bold capitalize" href="/dashboard/create">
 			➕ Create new Card 
 		</a>
 	  </div>
