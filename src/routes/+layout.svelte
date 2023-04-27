@@ -12,7 +12,7 @@
   </script>
   
   <svelte:head>
-	<title>Dataspells</title>
+	<title>✨Spellcard.io</title>
 	<link rel="icon" href="https://fav.farm/✨" />
   </svelte:head>
 

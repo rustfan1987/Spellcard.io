@@ -90,6 +90,7 @@
 >
 	<div class="grid-container ${columns} mt-16 pt-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 gap-5">
 				{#each filteredPosts as post, i}
+
 				<div
 				class="mt-2 max-w-8x1  flex justify-center overflow-x-auto  bg-transparent "
 			>
