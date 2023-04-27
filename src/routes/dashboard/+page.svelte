@@ -59,7 +59,7 @@
 
 <div class=" Gridbox flex justify-center pt-0">
 	<div
-		class="grid-container 3xl:grid-cols-7  4xl:grid-cols-8 mt-14  grid grid-cols-1 gap-2  pt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+		class="grid-container 3xl:grid-cols-7  4xl:grid-cols-8 mt-14  grid grid-cols-1 gap-3  pt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
 	>
 		{#each data.posts as post, i}
 			<div
@@ -68,7 +68,7 @@
 				<div class=" overflow-y-auto">
 					<div 
 						style="background-image: url('SpellCard_Test_BG3.png');"
-						class="spellcard rounded-lg border-4 border-slate-900  bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
+						class="spellcard rounded-lg border-4 brightness-90 border-slate-900 opacity-95 bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
 					>
 						<!-- Your post content here -->
 
@@ -177,16 +177,16 @@
 
 						<div class="mt-1 flex justify-center">
 							<a
-								class=" unstyled font-langar text-lg tracking-normal text-slate-100 antialiased"
+								class=" unstyled font-langar text-lg opacity-90 tracking-normal text-slate-100 antialiased"
 								href="/blog/{post.slug}"
 							>
 								{post.title}
 							</a>
 						</div>
 
-						<div class="relative ml-2 mt-3.5 mr-2 flex overflow-x-hidden">
+						<div class="relative ml-2 mt-3.5 mr-2 opacity-90 flex overflow-x-hidden">
 							<div
-								class="font-bruno-ace text-bold animate-marquee whitespace-nowrap text-xs"
+								class="font-bruno-ace text- animate-marquee whitespace-nowrap text-xs"
 							>
 								<span class="text-ice-blue">#</span><span
 									class="px-1 text-electric-yellow">Soulpact</span
@@ -217,7 +217,7 @@
 
 						<div class="mt-2.5 mb-1 ml-4 flex justify-between">
 							<p
-								class="tracking- font-caveat-cursve mt-2 ml-0.5 mr-0.5 flex-grow overflow-hidden text-center overflow-ellipsis whitespace-normal text-xs text-slate-900"
+								class="tracking- font-caveat-cursve mt-2 ml-0.5 mr-0.5 flex-grow overflow-hidden text-center content-center overflow-ellipsis whitespace-normal text-xs text-slate-900"
 								style="line-height: 0.9;"
 							>
 								{post.description}
@@ -272,7 +272,7 @@
 						</div>
 
 						<!-- Six emojis in a row -->
-						<div class="mt-0.5 flex justify-between">
+						<div class="mt-0.5 flex opacity-80 justify-between">
 							<span class="text-1xl">😈</span>
 							<span class="text-1xl">🥇</span>
 							<span class="text-1xl">💰</span>
@@ -284,8 +284,8 @@
 					</div>
 					<div class="flex justify-center">
 						<img
-							class=" h-15 top-0 z-0 mb-0 w-40 "
-							src="/CardAura_Fire_2.gif"
+							class=" h-15 top-0 z-0 mb-0 w-40 opacity-90 brightness-90 "
+							src="/CardAura_BlueMagicCheems.gif"
 							alt="  spellcard"
 						/>
 					</div>
