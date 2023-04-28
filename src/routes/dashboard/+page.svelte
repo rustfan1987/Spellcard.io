@@ -67,12 +67,12 @@
 			>
 				<div class=" overflow-y-auto">
 					<div 
-						style="background-image: url('SpellCard_Test_BG3.png');"
-						class="spellcard rounded-lg border-4 brightness-90 border-slate-900 opacity-95 bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
+						style="background-image: url('SpellCard_Test_BG.png');"
+						class="spellcard rounded-lg border-4 brightness-90 border-slate-900  bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
 					>
 						<!-- Your post content here -->
 
-						<div class="mt-3.5 mb-2 flex justify-around ">
+						<div class="mt-3.5 mb-2 flex justify-around opacity-95 brightness-95 ">
 							<button class="h-6 w-6 rounded"
 								><img
 									src="./Button_Favorite.png"
@@ -112,7 +112,7 @@
 						<div class="mt-1.5">
 							<div class=" flex justify-center ">
 								<div class="mb-2.5  flex flex-col justify-between ">
-									<button class="h-6 w-9 rounded"
+									<button class="h-6 w-9 rounded opacity-95 brightness-95"
 										><img
 											src="./Button_Trinket.png"
 											alt="Trinket Icon"
@@ -147,7 +147,7 @@
 								</div>
 
 								<div class="mb-2.5 flex flex-col justify-between ">
-									<button class="h-6 w-9  rounded"
+									<button class="h-6 w-9  rounded opacity-95 brightness-95"
 										><img
 											src="./Button_Emblem.png"
 											alt="Edit Card"
@@ -215,9 +215,9 @@
 							</div>
 						</div>
 
-						<div class="mt-2.5 mb-1 ml-4 flex justify-between">
+						<div class=" mt-2.5 mb-1 ml-4 flex justify-between">
 							<p
-								class="tracking- font-caveat-cursve mt-2 ml-0.5 mr-0.5 flex-grow overflow-hidden text-center content-center overflow-ellipsis whitespace-normal text-xs text-slate-900"
+								class="tracking- font-caveat-cursve mt-2 ml-0.5 mr-0.5 flex-grow overflow-hidden text-center content-center overflow-ellipsis whitespace-normal text-xs text-black"
 								style="line-height: 0.9;"
 							>
 								{post.description}
@@ -233,28 +233,28 @@
 						</div>
 
 						<!-- Public/Private signafier, image, members online -->
-						<div class=" grid grid-cols-3  items-start pt-0.5">
-							<div class="mt-0. ml-3.5 flex flex-col pl- ">
-								<span class=" mb-1 ml-1.5 pl-1.5 text-xs text-green-400">
+						<div class="opacity-90 brightness-90 grid grid-cols-3  items-start pt-0">
+							<div class="mt-0. ml-3.5 flex flex-col pt-0.  ">
+								<span class=" mb-1 ml-1.5 pl-1.5 text-xs text-amber-300">
 									Public
 								</span>
 
 								<span
-									class="font-creepster  mt-0.5 text-center text-sm font-medium italic text-red-700"
+									class="font-creepster  mt-1 ml-1 text-center text-xs font-medium italic text-red-600"
 									>SPICY</span
 								>
 							</div>
 							<div class="mt-1  ml-0.5 flex justify-center">
 								<img
-									src="/Crest_Demon_1.png"
+									src="/Crest_DemonFlame_1.gif"
 									alt="Favicon"
 									style="width: 42px; height: 42px;"
 								/>
 							</div>
 
-							<div class="ml-[-4px] flex flex-col ">
+							<div class="ml-[-4px] flex flex-col mt-0. ">
 								<span
-									class="mt- inline-block whitespace-nowrap pr-3 text-center text-xs text-blue-300"
+									class="mr-1.5 inline-block whitespace-nowrap pr-2 text-center text-xs text-amber-300"
 									>Game</span
 								>
 
@@ -284,8 +284,8 @@
 					</div>
 					<div class="flex justify-center">
 						<img
-							class=" h-15 top-0 z-0 mb-0 w-40 opacity-90 brightness-90 "
-							src="/CardAura_BlueMagicCheems.gif"
+							class=" h-15 top-0 z-0 mb-0 w-40  "
+							src="/CardAura_Fire_1.gif"
 							alt="  spellcard"
 						/>
 					</div>

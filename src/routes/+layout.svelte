@@ -17,7 +17,7 @@
   </svelte:head>
 
  
-  <div style="background-image: url('indexBackground.png'); background-attachment: fixed; transform: scale(3.3); background-attachment: fixed;"
+  <div style="background-image: url('indexBackground.png'); background-attachment: fixed; transform: scale(1); background-attachment: fixed;"
    class="background"></div>
   
   <Heading />
@@ -33,7 +33,7 @@
 	  height: 100%;
 	  background-image: url('indexBackground.png');
 	  background-attachment: fixed;
-	  background-color: rgba(0, 0, 0, 0.709); /* adjust the alpha value to make it darker */
+	  background-color: rgba(0, 0, 0, 1); /* adjust the alpha value to make it darker */
 	  z-index: -1;
 	  animation: hexagonal-scroll 600s linear infinite;
 	}
