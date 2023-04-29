@@ -94,60 +94,88 @@
 	>
 		{#each data.posts as post, i}
 			<div
-				class="max-w-8x1   flex justify-center overflow-x-auto  bg-transparent "
+				class="max-w-8x1  flex justify-center overflow-x-auto bg-transparent  p-0.5 "
 			>
 				<div class=" overflow-y-auto">
 					<div
 						style="background-image: url('SpellCard_Test_BG2.png');"
-						class="spellcard rounded-lg border-4 border-slate-900 bg-gradient-to-r  from-slate-200 to-slate-300 bg-cover bg-center p-2 shadow-md brightness-90"
+						class="spellcard rounded-lg border-4 border-slate-900 opacity-95 bg-gradient-to-r  from-slate-200 to-slate-300 bg-cover bg-center p-2 shadow-md brightness-95"
 					>
 						<!-- Your post content here -->
 
 						<div
-							class="mt-3 mx-2 pl-0 mb-1  flex justify-around opacity-100 brightness-80 "
+							class="brightness-60 mx-  mt-3.5 mb-2     flex justify-end pl-0 opacity-75 "
 						>
-							<button class="h-5 w-5 rounded"
+							<button class="mr-1 h-4 w-4 rounded"
 								><img
 									src="./Button_Favorite.png"
 									alt="Edit Card"
 									class="h-full w-full"
 								/></button
 							>
-							<button class="h-5 w-5 rounded"
-								><img
-									src="./Button_Delete.png"
-									alt="Edit Card"
-									class="h-full w-full"
-								/></button
-							>
-							<button class="h-5 w-5 rounded"
-								><img
-									src="./Button_Save.png"
-									alt="Edit Card"
-									class="h-full w-full"
-								/></button
-							>
-							<button class="h-5 w-5 rounded"
+							<button class="mr-1 h-4 w-4  rounded"
 								><img
 									src="./Button_Share.png"
 									alt="Edit Card"
 									class="h-full w-full"
 								/></button
 							>
-							<button class="h-6 w-6 rounded"
+							<button class="mr-1 h-4 w-4  rounded"
 								><img
-									src="./Button_Games.png"
+									src="./Button_Save.png"
 									alt="Edit Card"
 									class="h-full w-full"
 								/></button
 							>
+							<button class="mr-1 p h-4 w-4  rounded"
+								><img
+									src="./Button_Delete.png"
+									alt="Edit Card"
+									class="h-full w-full"
+								/></button
+							>
+							<button class="mr-1 h-4 w-4 rounded"
+							><img
+								src="./Button_Games.png"
+								alt="Edit Card"
+								class="h-full w-full"
+							/></button
+						>
+						<button class="mr-1 h-4 w-4  rounded"
+							><img
+								src="./Button_Crypto.png"
+								alt="Edit Card"
+								class="h-full w-full"
+							/></button
+						>
+						<button class="mr-1 h-4 w-4  rounded"
+							><img
+								src="./Button_Tavern.png"
+								alt="Edit Card"
+								class="h-full w-full"
+							/></button
+						>
+						<button class="mr-1 p h-4 w-4  rounded"
+							><img
+								src="./Button_Settings.png"
+								alt="Edit Card"
+								class="h-full w-full"
+							/></button
+							
+						>						<button class="mr-1 h-4 w-4  rounded"
+						><img
+							src="./Button_Trinket.png"
+							alt="Edit Card"
+							class="h-full w-full"
+						/></button
+					>
 						</div>
-						<div class="mt-1  mb-1">
+						<div class="mt-1   mb-  ">
 							<div class=" flex justify-center ">
-								<div class="mb-3 ml-0.5 pb-1 flex flex-col justify-between ">
+								<div class="ml- mb-3.5  flex flex-col justify-between pb-1 ">
 									<button class="h-6 w-9 rounded opacity-95 brightness-95"
 										><img
-											src="./Button_Trinket.png"
+											src="./Card_Ranks/FlamingCrest.png"
 											alt="Trinket Icon"
 											class=""
 											style="width: 40px; height: 40px;"
@@ -171,7 +199,7 @@
 									>
 								</div>
 
-								<div class="ml-0. mb-0.5">
+								<div class="ml-0. mb-1">
 									<img
 										src="./Avatar_A_CheemsMagic.gif"
 										alt="Favicon"
@@ -179,7 +207,7 @@
 									/>
 								</div>
 
-								<div class="mb-3 pb-1  flex flex-col justify-between ">
+								<div class="mb-3.5 flex  flex-col justify-between pb-1 ">
 									<button class="h-6 w-9  rounded opacity-95 brightness-95"
 										><img
 											src="./Card_Ranks/OrangeCrest.png"
@@ -208,23 +236,33 @@
 							</div>
 						</div>
 
-						<div class="mt-0 flex">
-							<img class="ml-0 brightness-110" src="/CardIcon_A_SkullBlueMagic.gif" alt="Favicon" style="width: 33px; height: 27px;"/>
+						<div class="mt-  flex">
+							<img
+								class="ml-[-5px] brightness-100 opacity-95"
+								src="/CardIcon_A_SkullBlueMagic.gif"
+								alt="Favicon"
+								style="width: 33px; height: 27px;"
+							/>
 							<div class="flex">
-							  <a class="flex  ml-2.5 mt-0.5 mb0.5 unstyled font-langar text-sm tracking-normal  text-slate-200 antialiased opacity-90" href="/blog/{post.slug}">
-								{post.title}
-							  </a>
+								<a
+									class="mb0.5 unstyled font-langar ml-3.5 mt-1   flex text-sm tracking-normal  text-slate-200 antialiased opacity-90"
+									href="/blog/{post.slug}"
+								>
+									{post.title}
+								</a>
 							</div>
 							<div class="ml-auto">
-							  <img class=" mt-1 mr-0.5" src="/Set_Alpha_Gold.png" alt="Favicon" style="width: 18px; height: 18px;"/>
+								<img
+									class=" mt-1.5  "
+									src="/Set_Alpha_Gold.png"
+									alt="Favicon"
+									style="width: 16px; height: 16px;"
+								/>
 							</div>
-						  </div>
-
-
-				
+						</div>
 
 						<div
-							class="relative ml-3 mt-4 mr-2 mb-1 flex overflow-x-hidden opacity-90"
+							class="relative ml-1.5 mt-3.5 mr-1 m flex overflow-x-hidden opacity-90 w-75"
 						>
 							<div
 								class="font-bruno-ace text- animate-marquee whitespace-nowrap text-xs"
@@ -241,13 +279,12 @@
 								<span class="text-ice-blue">#</span><span
 									class="px-1 text-electric-yellow">NWO</span
 								>
-
 							</div>
 						</div>
 
-						<div class=" mt-2.5 mb-1.5 ml-4 flex justify-between">
+						<div class=" mt-2 mb-2 ml-4 flex justify-between">
 							<p
-								class="tracking- font-caveat-cursve mt-2 ml-0.5 mr-0.5 flex-grow content-center overflow-hidden overflow-ellipsis whitespace-normal text-center text-xs text-slate-900"
+								class="tracking- font-caveat-cursve mt-2 ml-  mr-0.5 flex-grow content-center overflow-hidden overflow-ellipsis whitespace-normal text-center text-xs text-slate-900"
 								style="line-height: 0.9;"
 							>
 								{post.description}
@@ -264,7 +301,7 @@
 
 						<!-- Public/Private signafier, image, members online -->
 						<div
-							class="grid grid-cols-3 items-start pt  opacity-90 brightness-90"
+							class="pt-0.5 grid grid-cols-3 items-start  opacity-90 brightness-90"
 						>
 							<div class="mt-0. ml-3   flex flex-col  ">
 								<span class=" mb-1 ml-1 pl-1.5 text-xs text-amber-300">
@@ -287,11 +324,11 @@
 							<div class="mt-0. ml-[-4px] flex flex-col ">
 								<span
 									class="mr-1  inline-block whitespace-nowrap pr-0.5  text-center text-xs text-amber-300"
-									>Game</span
+									>Canvas</span
 								>
 
 								<span
-									class="font-allerta-stencil mt-2 ml-2 mr-4 flex   justify-center whitespace-nowrap text-xs text-slate-900"
+									class="font-allerta-stencil mt-2 ml-3 mr-4 flex   justify-center whitespace-nowrap text-xs text-slate-900"
 									style="font-size: 0.7rem;"
 								>
 									{date(post.createdAt)}
@@ -299,7 +336,7 @@
 							</div>
 						</div>
 
-						<div class=" mt-[-4px]   flex justify-center">
+						<div class=" mt-[-5px]   flex justify-center">
 							<img src="/expBAR_Ice_1.png" alt="Favicon" style="" />
 						</div>
 
