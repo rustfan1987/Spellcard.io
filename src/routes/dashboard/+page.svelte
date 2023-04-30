@@ -92,7 +92,7 @@
 			>
 				<div class=" overflow-y-auto">
 					<div
-						style="background-image: url('SpellCard_Test_BG.png');"
+						style="background-image: url('SpellCard_Test_BG3.png');"
 						class="spellcard rounded-lg border-4 border-slate-900 opacity-95 bg-gradient-to-r  from-slate-200 to-slate-300 bg-cover bg-center p-2 shadow-md brightness-95"
 					>
 						<!-- Your post content here -->
@@ -348,7 +348,7 @@
 					<div class="flex justify-center">
 						<img
 							class=" h-15 top-0 z-0 mb-0 w-40  "
-							src="/CardAura_Fire_1.gif"
+							src="/CardAura_Fire_2.gif"
 							alt="  spellcard"
 						/>
 					</div>

@@ -9,6 +9,12 @@
 
 	const { form, errors, constraints, enhance } = superForm(data)
 	let isDraft: boolean = $form.published
+
+
+
+
+
+
 </script>
 
 <div class="card mt-8 p-8">
@@ -65,6 +71,10 @@
 		{#if $errors.description}
 			<span class="text-red-400">{$errors.description}</span>
 		{/if}
+
+	
+
+
 
 
 
