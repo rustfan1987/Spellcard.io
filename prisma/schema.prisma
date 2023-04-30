@@ -50,14 +50,33 @@ model Key {
 }
 
 model Post {
-  id          Int      @id @default(autoincrement())
-  createdAt   DateTime @default(now())
-  slug        String   @unique
-  title       String
-  description String
-  markdown    String
+  id          Int      @id @default(autoincrement()) // Done, Post ID
+  public      Boolean  @default(true)
+  createdAt   DateTime @default(now())  // Done, created @ time
+  createdBy   String?
+  slug        String   @unique // Done, Unique name per card that user can enter to search for it
+  title       String // Done, Also is NAME 
+  description String  // Done, card description
+
+  markdown    String  // Done Space used for pop-out spellcard info
   html        String
-  published   Boolean  @default(false)
+  published   Boolean  @default(false) // Done Is card published
+  dateCreated String?
+
+  avatarURL   String?
+  cardTheme   String?
+  cardCrest   String?
+  cardTrinket String?
+  cardEmblem  String?
+  hashtags    String?
+  EmojiSetSix String?
+
+  rarity      String?
+  PopularStat String?
+  Hidden      Boolean @default(false)
+  isFavorite  Boolean @default(false)
+
+
 
   @@map("post")
 }

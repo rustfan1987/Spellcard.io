@@ -57,64 +57,119 @@
 	</div>
 </div>
 
+<head>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Caveat:wght@700&family=Langar&family=Permanent+Marker&family=Prompt:wght@600&family=Saira+Stencil+One&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Langar&family=Permanent+Marker&family=Prompt:wght@600&family=Saira+Stencil+One&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Permanent+Marker&family=Saira+Stencil+One&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+		rel="stylesheet"
+	/>
+</head>
+
+<div class="my- flex justify-center" />
+
 <div class=" Gridbox flex justify-center pt-0">
 	<div
 		class="grid-container 3xl:grid-cols-7  4xl:grid-cols-8 mt-14  grid grid-cols-1 gap-3  pt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
 	>
 		{#each data.posts as post, i}
 			<div
-				class="max-w-8x1   flex justify-center overflow-x-auto  bg-transparent "
+				class="max-w-8x1  flex justify-center overflow-x-auto bg-transparent  p-0.5 "
 			>
 				<div class=" overflow-y-auto">
-					<div 
+					<div
 						style="background-image: url('SpellCard_Test_BG.png');"
-						class="spellcard rounded-lg border-4 brightness-90 border-slate-900  bg-gradient-to-r from-slate-200 to-slate-300 bg-cover bg-center p-1 shadow-md"
+						class="spellcard rounded-lg border-4 border-slate-900 opacity-95 bg-gradient-to-r  from-slate-200 to-slate-300 bg-cover bg-center p-2 shadow-md brightness-95"
 					>
 						<!-- Your post content here -->
 
-						<div class="mt-3.5 mb-2 flex justify-around opacity-95 brightness-95 ">
-							<button class="h-6 w-6 rounded"
+						<div
+							class="brightness-60 mx-  mt-3.5 mb-2     flex justify-end pl-0 opacity-75 "
+						>
+							<button class="mr-1 h-4 w-4 rounded"
 								><img
 									src="./Button_Favorite.png"
 									alt="Edit Card"
 									class="h-full w-full"
 								/></button
 							>
-							<button class="h-6 w-6 rounded"
-								><img
-									src="./Button_Delete.png"
-									alt="Edit Card"
-									class="h-full w-full"
-								/></button
-							>
-							<button class="h-6 w-6 rounded"
-								><img
-									src="./Button_Save.png"
-									alt="Edit Card"
-									class="h-full w-full"
-								/></button
-							>
-							<button class="h-6 w-6 rounded"
+							<button class="mr-1 h-4 w-4  rounded"
 								><img
 									src="./Button_Share.png"
 									alt="Edit Card"
 									class="h-full w-full"
 								/></button
 							>
-							<button class="h-6 w-6 rounded"
+							<button class="mr-1 h-4 w-4  rounded"
 								><img
-									src="./Button_Games.png"
+									src="./Button_Save.png"
 									alt="Edit Card"
 									class="h-full w-full"
 								/></button
 							>
+							<button class="mr-1 p h-4 w-4  rounded"
+								><img
+									src="./Button_Delete.png"
+									alt="Edit Card"
+									class="h-full w-full"
+								/></button
+							>
+							<button class="mr-1 h-4 w-4 rounded"
+							><img
+								src="./Button_Games.png"
+								alt="Edit Card"
+								class="h-full w-full"
+							/></button
+						>
+						<button class="mr-1 h-4 w-4  rounded"
+							><img
+								src="./Button_Crypto.png"
+								alt="Edit Card"
+								class="h-full w-full"
+							/></button
+						>
+						<button class="mr-1 h-4 w-4  rounded"
+							><img
+								src="./Button_Tavern.png"
+								alt="Edit Card"
+								class="h-full w-full"
+							/></button
+						>
+						<button class="mr-1 p h-4 w-4  rounded"
+							><img
+								src="./Button_Settings.png"
+								alt="Edit Card"
+								class="h-full w-full"
+							/></button
+							
+						>						<button class="mr-1 h-4 w-4  rounded"
+						><img
+							src="./Button_Trinket.png"
+							alt="Edit Card"
+							class="h-full w-full"
+						/></button
+					>
 						</div>
-						<div class="mt-1.5">
+						<div class="mt-1   mb-  ">
 							<div class=" flex justify-center ">
-								<div class="mb-2.5  flex flex-col justify-between ">
+								<div class="ml- mb-3.5  flex flex-col justify-between pb-1 ">
 									<button class="h-6 w-9 rounded opacity-95 brightness-95"
 										><img
-											src="./Button_Trinket.png"
+											src="./Card_Ranks/FlamingCrest.png"
 											alt="Trinket Icon"
 											class=""
 											style="width: 40px; height: 40px;"
@@ -122,7 +177,7 @@
 									>
 									<button class="h-6 w-9 rounded"
 										><img
-											src="./Button_Copy.png"
+											src="./Card_Ranks/RedCrest.png"
 											alt="Save Card"
 											class="h-full w-full"
 											style="width: 40px; height: 40px;"
@@ -130,7 +185,7 @@
 									>
 									<button class="h-6 w-9 rounded"
 										><img
-											src="./Button_Settings.png"
+											src="./Player_Ranks/BlackTriangle.png"
 											alt="Edit Card"
 											class="h-full w-full"
 											style="width: 40px; height: 40px;"
@@ -138,18 +193,18 @@
 									>
 								</div>
 
-								<div class="">
+								<div class="ml-0. mb-1">
 									<img
 										src="./Avatar_Demon_1.png"
 										alt="Favicon"
-										style="width: 102px; height: 102x;"
+										style="width: 103px; height: 100x;"
 									/>
 								</div>
 
-								<div class="mb-2.5 flex flex-col justify-between ">
+								<div class="mb-3.5 flex  flex-col justify-between pb-1 ">
 									<button class="h-6 w-9  rounded opacity-95 brightness-95"
 										><img
-											src="./Button_Emblem.png"
+											src="./Card_Ranks/OrangeCrest.png"
 											alt="Edit Card"
 											class="h-full w-full"
 											style="width: 40px; height: 40px;"
@@ -157,7 +212,7 @@
 									>
 									<button class="h-6 w-9  rounded"
 										><img
-											src="./Button_Tavern.png"
+											src="./Card_Ranks/GreenCrest.png"
 											alt="Edit Card"
 											class="h-full w-full"
 											style="width: 40px; height: 40px;"
@@ -165,7 +220,7 @@
 									>
 									<button class="h-6 w-9 rounded"
 										><img
-											src="./Button_Crypto.png"
+											src="./Card_Ranks/PinkDiamond.png"
 											alt="Edit Card"
 											class="h-full w-full"
 											style="width: 40px; height: 40px;"
@@ -175,49 +230,55 @@
 							</div>
 						</div>
 
-						<div class="mt-1 flex justify-center">
-							<a
-								class=" unstyled font-langar text-lg opacity-90 tracking-normal text-slate-100 antialiased"
-								href="/blog/{post.slug}"
-							>
-								{post.title}
-							</a>
+						<div class="mt-  flex">
+							<img
+								class="ml-[-5px] brightness-100 opacity-95"
+								src="/Crest_DemonFlame_1.gif"
+								alt="Favicon"
+								style="width: 33px; height: 27px;"
+							/>
+							<div class="flex">
+								<a
+									class="mb0.5 unstyled font-langar ml-3.5 mt-1   flex text-sm tracking-normal  text-slate-200 antialiased opacity-90"
+									href="/blog/{post.slug}"
+								>
+									{post.title}
+								</a>
+							</div>
+							<div class="ml-auto">
+								<img
+									class=" mt-1.5  "
+									src="/Set_Alpha_Gold.png"
+									alt="Favicon"
+									style="width: 16px; height: 16px;"
+								/>
+							</div>
 						</div>
 
-						<div class="relative ml-2 mt-3.5 mr-2 opacity-90 flex overflow-x-hidden">
+						<div
+							class="relative ml-1.5 mt-3.5 mr-1 m flex overflow-x-hidden opacity-90 w-75"
+						>
 							<div
 								class="font-bruno-ace text- animate-marquee whitespace-nowrap text-xs"
 							>
 								<span class="text-ice-blue">#</span><span
-									class="px-1 text-electric-yellow">Soulpact</span
+									class="px-1 text-electric-yellow">Magic</span
 								>
 								<span class="text-ice-blue">#</span><span
-									class="px-1 text-electric-yellow">Sepolia</span
+									class="px-1 text-electric-yellow">Woof</span
 								>
 								<span class="text-ice-blue">#</span><span
-									class="px-1 text-electric-yellow">ETH</span
+									class="px-1 text-electric-yellow">Doge</span
 								>
 								<span class="text-ice-blue">#</span><span
-									class="px-1 text-electric-yellow">FairOdds</span
-								>
-								<span class="text-ice-blue">#</span><span
-									class="px-1 text-electric-yellow">Casino</span
-								>
-								<span class="text-ice-blue">#</span><span
-									class="px-1 text-electric-yellow">Crypto</span
-								>
-								<span class="text-ice-blue">#</span><span
-									class="px-1 text-electric-yellow">Web3</span
-								>
-								<span class="text-ice-blue">#</span><span
-									class="px-1 text-electric-yellow">Nice</span
+									class="px-1 text-electric-yellow">NWO</span
 								>
 							</div>
 						</div>
 
-						<div class=" mt-2.5 mb-1 ml-4 flex justify-between">
+						<div class=" mt-2 mb-2 ml-4 flex justify-between">
 							<p
-								class="tracking- font-caveat-cursve mt-2 ml-0.5 mr-0.5 flex-grow overflow-hidden text-center content-center overflow-ellipsis whitespace-normal text-xs text-black"
+								class="tracking- font-caveat-cursve mt-2 ml-  mr-0.5 flex-grow content-center overflow-hidden overflow-ellipsis whitespace-normal text-center text-xs text-slate-900"
 								style="line-height: 0.9;"
 							>
 								{post.description}
@@ -233,18 +294,20 @@
 						</div>
 
 						<!-- Public/Private signafier, image, members online -->
-						<div class="opacity-90 brightness-90 grid grid-cols-3  items-start pt-0">
-							<div class="mt-0. ml-3.5 flex flex-col pt-0.  ">
-								<span class=" mb-1 ml-1.5 pl-1.5 text-xs text-amber-300">
+						<div
+							class="pt-0.5 grid grid-cols-3 items-start  opacity-90 brightness-90"
+						>
+							<div class="mt-0. ml-3   flex flex-col  ">
+								<span class=" mb-1 ml-1 pl-1.5 text-xs text-amber-300">
 									Public
 								</span>
 
 								<span
-									class="font-creepster  mt-1 ml-1 text-center text-xs font-medium italic text-red-600"
+									class="font-creepster  mt-1 ml-0.5 text-center text-xs font-medium italic text-red-600"
 									>SPICY</span
 								>
 							</div>
-							<div class="mt-1  ml-0.5 flex justify-center">
+							<div class="mt-1  ml-0.5 flex justify-center brightness-110">
 								<img
 									src="/Crest_DemonFlame_1.gif"
 									alt="Favicon"
@@ -252,14 +315,14 @@
 								/>
 							</div>
 
-							<div class="ml-[-4px] flex flex-col mt-0. ">
+							<div class="mt-0. ml-[-4px] flex flex-col ">
 								<span
-									class="mr-1.5 inline-block whitespace-nowrap pr-2 text-center text-xs text-amber-300"
-									>Game</span
+									class="mr-1  inline-block whitespace-nowrap pr-0.5  text-center text-xs text-amber-300"
+									>Canvas</span
 								>
 
 								<span
-									class="font-allerta-stencil mt-2 ml-1.5 mr-4 flex   justify-center whitespace-nowrap text-xs text-slate-900"
+									class="font-allerta-stencil mt-2 ml-3 mr-4 flex   justify-center whitespace-nowrap text-xs text-slate-900"
 									style="font-size: 0.7rem;"
 								>
 									{date(post.createdAt)}
@@ -267,18 +330,18 @@
 							</div>
 						</div>
 
-						<div class=" mt-[-2px]  flex justify-center">
+						<div class=" mt-[-5px]   flex justify-center">
 							<img src="/expBAR_Demon_1.png" alt="Favicon" style="" />
 						</div>
 
 						<!-- Six emojis in a row -->
-						<div class="mt-0.5 flex opacity-80 justify-between">
-							<span class="text-1xl">😈</span>
-							<span class="text-1xl">🥇</span>
-							<span class="text-1xl">💰</span>
-							<span class="text-1xl">🐐</span>
-							<span class="text-1xl">🔥 </span>
-							<span class="text-1xl">👻</span>
+						<div class="mt-0.5 flex justify-between opacity-80">
+							<span class="text-1xl">👑</span>
+							<span class="text-1xl">🍀</span>
+							<span class="text-1xl">🧙🏼‍♂️</span>
+							<span class="text-1xl">✨</span>
+							<span class="text-1xl">🌈 </span>
+							<span class="text-1xl">⚡️</span>
 						</div>
 						<div class="relative" />
 					</div>
@@ -367,3 +430,6 @@
 		z-index: 50;
 	}
 </style>
+
+
+

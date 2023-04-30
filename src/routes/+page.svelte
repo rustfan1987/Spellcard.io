@@ -50,7 +50,12 @@
 	onDestroy(() => {
 		window.removeEventListener('resize', updateColumns) // Remove the event listener on component unmount
 	})
+
+
+
+ 
 </script>
+
 
 <div class="ml-50 container flex justify-center">
 	<div style="position: absolute; top: 55px;">
