@@ -50,7 +50,7 @@
 				Spellbook
 			  </a>
 		  
-			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="/about">
+			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="https://spellcard-io.gitbook.io/spellcard.io/">
 				<img src="/FerventHeatAura.png" alt="Team Icon" class="h-6 w-6 mr- flex-shrink-0" />
 				Help
 			  </a>
