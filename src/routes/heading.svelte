@@ -42,17 +42,17 @@
 		  
 			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="/dashboard">
 				<img src="/NaturesGift_Icon.png" alt="Create Icon" class="h-6 w-6 mr- flex-shrink-0" />
-				Create
+				Sample
 			  </a>
 		  
-			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="/blog">
+			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="https://linktr.ee/spellcard">
 				<img src="/GlacialRevenantAura.png" alt="Spellbook Icon" class="h-6 w-6 mr- flex-shrink-0" />
-				Spellbook
+				Links
 			  </a>
 		  
 			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="https://spellcard-io.gitbook.io/spellcard.io/">
 				<img src="/FerventHeatAura.png" alt="Team Icon" class="h-6 w-6 mr- flex-shrink-0" />
-				Help
+				About
 			  </a>
 		  
 			  {#if $user}
