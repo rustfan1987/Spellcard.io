@@ -9,51 +9,32 @@
 	import '../app.postcss';
   
 	handleSession(page);
-  </script>
-  
-  <svelte:head>
+</script>
+
+<svelte:head>
 	<title>✨Spellcard.io</title>
 	<link rel="icon" href="https://fav.farm/✨" />
-  </svelte:head>
+</svelte:head>
 
- 
-  <div style="background-image: url('indexBackground.png'); background-attachment: fixed; transform: scale(1); background-attachment: fixed;"
-   class="background"></div>
+<div class="background"></div>
   
-  <Heading />
+<Heading />
   
-  <div class="content-container">
+<div class="content-container">
 	<slot />
-  </div>
+</div>
   
-  <style>
+<style>
 	.background {
 	  position: fixed;
+	  top: 0;
+	  left: 0;
 	  width: 100%;
 	  height: 100%;
-	  background-image: url('indexBackground.png');
-	  background-attachment: fixed;
-	  background-color: rgba(0, 0, 0, 1); /* adjust the alpha value to make it darker */
+	  background-image: url('portalsback.png');
+	  background-size: cover;
+	  background-position: center;
 	  z-index: -1;
-	  animation: hexagonal-scroll 600s linear infinite;
-	}
-  
-	@keyframes hexagonal-scroll {
-	  0% {
-		background-position: 0% 50%;
-	  }
-	  25% {
-		background-position: 35% 25%;
-	  }
-	  50% {
-		background-position: 100% 50%;
-	  }
-	  75% {
-		background-position: 65% 75%;
-	  }
-	  100% {
-		background-position: 0% 50%;
-	  }
 	}
   
 	.content-container {
@@ -61,4 +42,4 @@
 	  z-index: 1;
 	}
 	/* ... other existing styles ... */
-  </style>
+</style>

@@ -91,7 +91,7 @@
 	/>
 </head>
 
-<div class="my- flex justify-center" />
+<div class=" flex justify-center" />
 
 <div class=" Gridbox flex justify-center pt-0">
 	<div

@@ -42,7 +42,7 @@
 		  
 			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="/dashboard">
 				<img src="/NaturesGift_Icon.png" alt="Create Icon" class="h-6 w-6 mr- flex-shrink-0" />
-				Sample
+				Create
 			  </a>
 		  
 			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="https://linktr.ee/spellcard">
