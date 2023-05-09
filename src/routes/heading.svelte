@@ -55,6 +55,11 @@
 				About
 			  </a>
 		  
+			  <a class="unstyled whitespace-nowrap text-white flex items-center" href="/UserSettings">
+				<img src="/NegativeWavelengthAura.png" alt="Team Icon" class="h-6 w-6 mr- flex-shrink-0" />
+				Settings
+			  </a>
+
 			  {#if $user}
 		  
 			  <form method="POST" action="/logout" use:enhance>
@@ -62,10 +67,13 @@
 				  <img src="/Euphoria_Icon.png" alt="Logout Icon" class="h-6 w-6 mr- flex-shrink-0" />
 				  Log out
 				</button>
+				
+				
 			  </form>
 		  
 			  {/if}
 		  
+			  
 	
 		  
 			</ol>
