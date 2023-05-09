@@ -250,7 +250,7 @@
 							/>
 							<div class="flex">
 								<a
-									class="mb0.5 unstyled font-langar ml-3.5 mt-1.5   flex text-xs tracking-normal  text-slate-200 antialiased opacity-90"
+									class="highlight mb0.5 unstyled font-langar ml-3.5 mt-1.5   flex text-xs tracking-normal  text-slate-200 antialiased opacity-90"
 									href="/blog/{post.slug}"
 								>
 									Spellcard
@@ -1018,7 +1018,7 @@
 
 								<div class="ml-0. mb-1">
 									<img
-										src="./Avatar_Frame.png"
+										src="./Avatar_A_DoomBoard.gif"
 										alt="Favicon"
 										style="width: 103px; height: 100x;"
 									/>
@@ -1056,7 +1056,7 @@
 						<div class="mt-  flex">
 							<img
 								class="ml-[-5px] brightness-100 opacity-95"
-								src="/Crest_A_CrystalBall.gif"
+								src="/Crest_DemonFlame_1.gif"
 								alt="Favicon"
 								style="width: 33px; height: 27px;"
 							/>
@@ -1065,7 +1065,7 @@
 									class="mb0.5 unstyled font-langar ml-3.5 mt-1.5   flex text-xs tracking-normal  text-slate-200 antialiased opacity-90"
 									href="/blog/{post.slug}"
 								>
-									Demo Card
+									Doom Board
 								</a>
 							</div>
 							<div class="ml-auto">
@@ -1109,7 +1109,7 @@
 
 							<div class="mt-2 ml-0 flex-shrink-0">
 								<img
-									src="/DescAvatar_CheemsFloat.png"
+									src="/DescAvatar_Demon_1.png"
 									alt="cheems"
 									class="h-20 w-11 object-cover"
 								/>
@@ -1132,7 +1132,7 @@
 							</div>
 							<div class="mt-1  ml-0.5 flex justify-center brightness-110">
 								<img
-									src="/Crest_A_CrystalBall.gif"
+									src="/Crest_DemonFlame_1.gif"
 									alt="Favicon"
 									style="width: 42px; height: 42px;"
 								/>
@@ -1154,7 +1154,7 @@
 						</div>
 
 						<div class=" mt-[-5px]   flex justify-center">
-							<img src="/expBAR_Teal_1.png" alt="Favicon" style="" />
+							<img src="/expBAR_Yellow_1.png" alt="Favicon" style="" />
 						</div>
 
 						<!-- Six emojis in a row -->
@@ -1171,7 +1171,7 @@
 					<div class="flex justify-center">
 						<img
 							class=" h-15 top-0 z-0 mb-0 w-40  "
-							src="/CardAura_Fire_1.gif"
+							src="/CardAura_DoomBoard.gif"
 							alt="  spellcard"
 						/>
 					</div>
