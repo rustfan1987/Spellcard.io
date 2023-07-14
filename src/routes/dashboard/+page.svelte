@@ -22,9 +22,6 @@
 	// Reactive variable for the number of columns
 
 
-
-
- 
 </script>
 
 
@@ -52,7 +49,7 @@
 </head>
 
 <div class="pt-24">
-<div class="flex justify-center flex-wrap pt-44 text-white mx-10 bg-center bg-no-repeat bg-op" 
+<div class=" bg-transparent flex justify-center flex-wrap pt-44 text-white mx-10 bg-center bg-no-repeat bg-op" 
   style="background-image: url(' '); background-position: center 100px;">
 
  <!-- Left -->
@@ -216,12 +213,12 @@
 
 				{#each data.posts as post, i}
 					<div
-						class="max-w-1x1 mt-20 flex justify-center overflow-x-auto bg-transparent my-10  p-0.5 "
+						class="  max-w-1x1 mt-20 flex justify-center overflow-x-auto bg-transparent my-10  p-0.5 "
 					>
-						<div class=" overflow-y-auto">
+						<div class="p-6 overflow-y-auto ">
 							<div
 								style="background-image: url('SpellCard_Test_BG2.png');"
-								class="spellcard rounded-lg border-4 border-slate-900 opacity-95 bg-gradient-to-r  from-slate-200 to-slate-300 bg-cover bg-center p-2 shadow-md brightness-95"
+								class="card    eevee spellcard rounded-lg border-4 border-slate-900 opacity-95 bg-gradient-to-r  from-slate-200 to-slate-300 bg-cover bg-center p-2 shadow-md brightness-95"
 							>
 								<!-- Your post content here -->
 		
@@ -365,7 +362,7 @@
 										alt="Favicon"
 										style="width: 33px; height: 27px;"
 									/>
-									<div class="flex">
+									<div class="flex ">
 										<a
 											class="mb0.5 unstyled font-langar ml-3.5 mt-1.5   flex text-xs tracking-normal  text-slate-200 antialiased opacity-90"
 											href="/blog/{post.slug}"
@@ -576,6 +573,9 @@
 	  
 	  <!-- more fields for selection fields -->
 	</div>
+
+
+
 	<style>
 		.spellcard {
 			width: 200px; /* Set the fixed width */
@@ -627,4 +627,365 @@
 			z-index: 50;
 		}
 		
+
+		.card:hover {
+  box-shadow: 
+    -20px -20px 30px -25px var(--color1), 
+    20px 20px 30px -25px var(--color2), 
+    -7px -7px 10px -5px var(--color1), 
+    7px 7px 10px -5px var(--color2), 
+    0 0 13px 4px rgba(255,255,255,0.3),
+    0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+.card.charizard {
+  --color1: var(--charizard1);
+  --color2: var(--charizard2);
+  --front: var(--charizardfront);
+}
+.card.pika {
+  --color1: var(--pika1);
+  --color2: var(--pika2);
+  --front: var(--pikafront);
+}
+.card.mewtwo {
+  --color1: var(--mewtwo1);
+  --color2: var(--mewtwo2);
+  --front: var(--mewtwofront);
+}
+.card.eevee {
+  --color1: #ec9bb6;
+  --color2: #ccac6f;
+  --color3: #69e4a5;
+  --color4: #8ec5d6;
+  --color5: #b98cce;
+  --front: var(--eeveefront);
+}
+
+.card:before,
+.card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  opacity: .5;
+  mix-blend-mode: color-dodge;
+  transition: all .33s ease;
+}
+
+.card:before {
+  background-position: 50% 50%;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    115deg,
+    transparent 0%,
+    var(--color1) 25%,
+    transparent 47%,
+    transparent 53%,
+    var(--color3) 75%,
+    transparent 100%
+  );
+  opacity: .5;
+  filter: brightness(.5) contrast(1);
+  z-index: 1;
+}
+
+.card:after {
+  opacity: 1;
+  background-image: url("https://assets.codepen.io/13471/sparkles.gif"), 
+    url(https://assets.codepen.io/13471/holo.png), 
+    linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
+  background-position: 50% 50%;
+  background-size: 160%;
+  background-blend-mode: overlay;
+  z-index: 2;
+  filter: brightness(1) contrast(1);
+  transition: all 7s ease;
+  mix-blend-mode: color-dodge;
+  opacity: .75;
+}
+
+.card.active:after,
+.card:hover:after {
+  filter: brightness(1) contrast(1);;
+  opacity: 1;
+}
+
+.card.active,
+.card:hover {
+  animation: none;
+  transition: box-shadow 6s ease-out;
+}
+
+.card.active:before,
+.card:hover:before {
+  animation: none;
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    var(--color1) 48%,
+    var(--color2) 52%,
+    transparent 75%
+  );
+  background-position: 50% 50%;
+  background-size: 250% 250%;
+  opacity: .88;
+  filter: brightness(.66) contrast(1.33);
+  transition: none;
+}
+
+.card.active:before,
+.card:hover:before,
+.card.active:after,
+.card:hover:after {
+  animation: none;
+  transition: none;
+}
+
+.card.animated {
+  transition: none;
+  animation: holoCard 12s ease 0s 1;
+  &:before { 
+    transition: none;
+    animation: holoGradient 12s ease 0s 1;
+  }
+  &:after {
+    transition: none;
+    animation: holoSparkle 12s ease 0s 1;
+  }
+}
+
+
+
+
+@keyframes holoSparkle {
+  0%, 100% {
+    opacity: .75; background-position: 50% 50%; filter: brightness(1.2) contrast(1.25);
+  }
+  5%, 8% {
+    opacity: 1; background-position: 40% 40%; filter: brightness(.8) contrast(1.2);
+  }
+  13%, 16% {
+    opacity: .5; background-position: 50% 50%; filter: brightness(1.2) contrast(.8);
+  }
+  35%, 38% {
+    opacity: 1; background-position: 60% 60%; filter: brightness(1) contrast(1);
+  }
+  55% {
+    opacity: .33; background-position: 45% 45%; filter: brightness(1.2) contrast(1.25);
+  }
+}
+
+@keyframes holoGradient {
+  0%, 100% {
+    opacity: 0.5;
+    background-position: 50% 50%;
+    filter: brightness(.5) contrast(1);
+  }
+  5%, 9% {
+    background-position: 100% 100%;
+    opacity: 1;
+    filter: brightness(.75) contrast(1.25);
+  }
+  13%, 17% {
+    background-position: 0% 0%;
+    opacity: .88;
+  }
+  35%, 39% {
+    background-position: 100% 100%;
+    opacity: 1;
+    filter: brightness(.5) contrast(1);
+  }
+  55% {
+    background-position: 0% 0%;
+    opacity: 1;
+    filter: brightness(.75) contrast(1.25);
+  }
+}
+
+@keyframes holoCard {
+  0%, 100% {
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+  }
+  5%, 8% {
+    transform: rotateZ(0deg) rotateX(1deg) rotateY(-20deg);
+  }
+  13%, 16% {
+    transform: rotateZ(0deg) rotateX(-1deg) rotateY(32deg);
+  }
+  35%, 38% {
+    transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+  }
+  55% {
+    transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+  }
+}
+
+
+
+.card.eevee:hover {
+  box-shadow: 
+    0 0 30px -5px rgba(11, 138, 222, 0.486),
+    0 0 10px -2px rgb(11, 10, 10) 
+	0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+.card.eevee:hover:before,
+.card.eevee.active:before {
+  background-image: linear-gradient(
+	var(--color2) 20%,
+ 
+    var(--color2) 36%,
+	transparent 30%,
+
+    var(--color2) 20%,
+ 
+    transparent 50%
+	
+  );
+}
+
+
+
+
+.demo .card {
+  background-image: var(--back);
+
+}
+
+
+.demo .card:nth-of-type(1),
+.demo .card:nth-of-type(2),
+.demo .card:nth-of-type(3) {
+ 
+ 
+  box-shadow: inset 0 0 0 1px rgba(white,0.4), 0 25px 15px -10px rgba(0, 0, 0, 0.5);
+  animation: none;
+}
+
+.demo .card:nth-of-type(1),
+.demo .card:nth-of-type(2),
+.demo .card:nth-of-type(3) {
+  &:before, &:after {
+    animation: none;
+     opacity: 1;
+  } 
+}
+.demo .card:nth-of-type(1) {
+  &:before, &:after { display: none; }
+}
+.demo .card:nth-of-type(2) {
+  background: none;
+  &:before { display: none; }
+}
+.demo .card:nth-of-type(3) {
+  background: none;
+  &:after { display: none; }
+}
+
+.operator {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 6vh;
+}
+
+
+
+
+
+
+html, body {
+ 
+  transform: translate3d(0,0,0.1px);
+}
+ 
+
+ 
+ 
+.demo {
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+  }
+}
+
+
+
+
+
+
+.cards .card {
+  &:nth-child(2) {
+    &, &:before, &:after {
+      animation-delay: 0.25s;
+    }
+  }
+  &:nth-child(3) {
+    &, &:before, &:after {
+      animation-delay: 0.5s;
+    }
+  }
+  &:nth-child(4) {
+    &, &:before, &:after {
+      animation-delay: 0.75s;
+    }
+  }
+}
+
+
+ 
+.promo {
+  margin-top: 50px;
+}
+.promo img {
+  margin-top: 10px;
+  max-width: 80%;
+}
+p a {
+  color: cyan;
+}
+
+html,body,main {
+  min-height: 100%;
+}
+
+
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 	</style>
+
+	

@@ -16,7 +16,7 @@
 	<link rel="icon" href="https://fav.farm/✨" />
 </svelte:head>
 
-<div class="background"></div>
+<div class="background brightness-50"></div>
   
 <Heading />
   
@@ -31,7 +31,7 @@
 	  left: 0;
 	  width: 100%;
 	  height: 100%;
-	  background-image: url('portalsback.png');
+	  background-image: url('neonback.png');
 	  background-size: cover;
 	  background-position: center;
 	  z-index: -1;
